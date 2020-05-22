@@ -49,14 +49,13 @@ export default {
      outline:0;
   }
   &:hover{
-    box-shadow: 1px 1px 5px $content-color;
+    box-shadow: 2px 2px 6px $content-color;
   }
   &:focus {
     animation: button 0.3s ease-in;
   }
   border: 1px solid $border-color;
   display: inline-block;
-  margin: 0;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;

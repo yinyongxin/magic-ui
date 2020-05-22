@@ -1,41 +1,36 @@
 <template>
   <div id="app">
-    <div>
-      <m-button @click="add">默认</m-button>
-      <m-button type="primary">主要</m-button>
-      <m-button type="success">成功</m-button>
-      <m-button type="warning">警告</m-button>
-      <m-button type="error">错误</m-button>
-      <m-button type="primary" disabled>禁用</m-button>
-      <m-button type="primary" icon="m-icon-coffee"></m-button>
-    </div>
-    <div>
-      <m-button circle icon="m-icon-coffee" @click="add"></m-button>
-      <m-button circle icon="m-icon-coffee" type="primary"></m-button>
-      <m-button circle icon="m-icon-coffee" type="success"></m-button>
-      <m-button circle icon="m-icon-coffee" type="warning"></m-button>
-      <m-button circle icon="m-icon-coffee" type="error"></m-button>
-      <m-button circle icon="m-icon-coffee" type="primary" disabled></m-button>
-      <m-button circle icon="m-icon-coffee" type="primary"></m-button>
-    </div>
-      
-    <div>
-
-    </div>
+    <m-row>
+      <Menu></Menu>
+      <m-col class="">
+        <div class="p-15 main-show">
+          <router-view></router-view>
+        </div>
+      </m-col>
+    </m-row>
   </div>
 </template>
 
 <script>
+import Menu from './layout/Menu'
 export default {
   name: 'App',
+  components: {  
+    Menu,
+  },
   methods: {
     add() {
-      console.log('9999')
+      console.log('999999')
     }
   }
 }
 </script>
 
 <style lang="scss">
-
+  #app {
+    .main-show {
+      height: 100vh;
+      overflow-y: scroll;
+    }
+  }
 </style>

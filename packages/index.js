@@ -1,8 +1,21 @@
 import './assets/fonts/font.scss'
-import Button from './components/button.vue'
+
+import Button from './components/Button.vue'
+import Card from './components/Card.vue'
+import Row from './components/Row.vue'
+import Col from './components/Col.vue'
+import AsideMenu from './components/aside-menu/AsideMenu.vue'
+import AsideMenuGroup from './components/aside-menu/AsideMenuGroup.vue'
+import AsideMenuItem from './components/aside-menu/AsideMenuItem.vue'
 
 let components = [
-  Button
+  Button,
+  Card,
+  Row,
+  Col,
+  AsideMenu,
+  AsideMenuGroup,
+  AsideMenuItem,
 ]
 
 const install = (Vue) => {

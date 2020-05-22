@@ -1,0 +1,155 @@
+/*
+  遍历循环出margin padding font-size
+*/
+@for $i from 0 through 200 {
+  .m-#{$i} { margin: ($i)+px; }
+  .m-t-#{$i} { margin-top: ($i)+px; }
+  .m-b-#{$i} { margin-bottom: ($i)+px; }
+  .m-l-#{$i} { margin-left: ($i)+px; }
+  .m-r-#{$i} { margin-right: ($i)+px; }
+ 
+  .p-#{$i} { padding: ($i)+px; }
+  .p-t-#{$i} { padding-top: ($i)+px; }
+  .p-b-#{$i} { padding-bottom: ($i)+px; }
+  .p-l-#{$i} { padding-left: ($i)+px; }
+  .p-r-#{$i} { padding-right: ($i)+px; }
+ 
+  .fz-#{$i} { font-size: ($i)+px; }
+
+}
+
+/*
+  循环出width和height
+*/
+@for $i from 1 through 1000{
+  .w-#{$i} { width: $i+px; }
+  .h-#{$i} { height: $i+px; }
+}
+
+/*
+  遍历循环出margin padding font-size
+*/
+@for $i from 1 through 200 {
+  .l-h-#{$i} { line-height: ($i)+px; }
+}
+/*
+  遍历循环出圆角
+*/
+@for $i from 1 through 20 {
+  .b-r-#{$i} { border-radius: ($i)+px; }
+}
+
+
+
+.text-align-center {
+  text-align: center;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+
+
+/* flex */
+.flex {
+  display: flex;
+}
+@for $i from 1 through 10 {
+  .flex#{$i} { flex: $i; }
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.flex-center { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-space-around{
+  justify-content: space-around;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.W100 {
+  width: 100%;
+}
+.H100 {
+  height: 100%;
+}
+.WH100 {
+  width: 100%;
+  height: 100%;
+}
+
+.WVH100 {
+  width: 100vh;
+}
+.HVH100 {
+  height: 100vh;
+}
+.VH100 {
+  width: 100vh;
+  height: 100vh;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+// 折行
+.word-wrap {
+  word-wrap: break-word;
+}
+
+// 多余的隐藏
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+// 清除浮动
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+  clear: both
+}
+
+// 阴影 
+.box-shadow{
+  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.4);
+}
+.box-shadow-hover {
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+// 边框
+.border1 {
+  border: 1px solid #aaaaaa;
+}
+
+// 圆
+.border-r {
+  border-radius: 50%;
+}
