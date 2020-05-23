@@ -1,5 +1,16 @@
 <template>
-  <div class="aside-menu" :style="{width: width+'px'}">
+  <div 
+    class="aside-menu" 
+    :class="{
+      'aside-menu-border-right': IsBorder == 'right'? true : false,
+      'aside-menu-border-left': IsBorder == 'left'? true : false
+    }"
+    :style="{
+      width: width+'px',
+      backgroundColor: BackgroundColor,
+      color: TextColor,
+    }"
+  >
     <slot></slot>
   </div>
 </template>
@@ -11,18 +22,39 @@ export default {
     width: {
       type: Number,
       default: 200
-    }
-  }
+    },
+    BackgroundColor: {
+      type: String,
+      default: 'fgfgf'
+    },
+    TextColor: {
+      type: String,
+      default: ''
+    },
+    IsBorder: {
+      type: String,
+      default: 'right'
+    },
+  },
+  created() {
+    console.log('width', this.width)
+    console.log('border', this.border)
+  },
 }
 </script>
 
 <style lang="scss">
-  .aside-menu {
-    height: 100%;
-    padding: 15px;
-    border: 1px solid #ebeef5;
-    background-color: #fff;
-    overflow-y: auto;
-    // background-color: pink;
-  }
+@import '../../assets/color.scss';
+.aside-menu {
+  color: $title-color;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.aside-menu-border-right {
+  border-right: 1px solid #DCDFE6;
+}
+.aside-menu-border-left {
+  border-left: 1px solid #DCDFE6;
+}
 </style>

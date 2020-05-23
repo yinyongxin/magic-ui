@@ -44,8 +44,7 @@ export default {
 @import '../../assets/color.scss';
 .aside-menu-item {
   padding: 14px;
-  background-color: #fff;
-  color: #303133;
+  color: inherit;
   transition: all 0.5s;
   &:hover {
     cursor: pointer;

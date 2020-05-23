@@ -122,7 +122,7 @@ export default {
 }
 .is-circle {
   border-radius: 50%;
-  padding:  0 9px;
+  padding: 0 9px;
 }
 @keyframes button {
   0% {

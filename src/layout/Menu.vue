@@ -1,6 +1,9 @@
 <template>
   <div class="menu">
-    <m-aside-menu :width="260">
+    <m-aside-menu 
+      :width="240"
+      isBorder
+    >
       <m-aside-menu-item m-link="home">
         首页</m-aside-menu-item>
       <m-aside-menu-group>
@@ -26,6 +29,6 @@ export default {
 <style lang="scss">
 .menu {
   height: 100vh;
-
+  background-color: #545c64;
 }
 </style>
