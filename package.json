@@ -1,6 +1,6 @@
 {
   "name": "magic-ui-yyx",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/magic-ui.umd.min.js",
   "author": {
     "name": "银永鑫"
@@ -8,9 +8,8 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib packages/index.js",
+    "build:doc": "vue-cli-service build --dest doc",
+    "build:lib": "vue-cli-service build --dest dist --target lib packages/index.js",
     "update": "npm publish"
   },
   "dependencies": {

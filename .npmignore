@@ -1,6 +1,7 @@
 # 忽略目录
 packages/
 public/
+doc/
 
 # 忽略指定文件
 babel.config.js
