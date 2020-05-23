@@ -2,7 +2,7 @@
   <div 
     class="magic-col" 
     :style="{
-      flex, 
+      flex: span, 
       paddingLeft: MRow.gutter/2 + 'px', 
       paddingRight: MRow.gutter/2 + 'px'
     }"
@@ -15,14 +15,14 @@
 export default {
   name: 'MCol',
   props: {
-    flex: {
-      type: String,
-      default: '1'
+    span: {
+      type: Number,
+      default: 1
     }
   },
   inject: ['MRow'],
   created() {
-    console.log(this.MRow)
+    // console.log(this.MRow)
   }
 }
 </script>

@@ -32,3 +32,4 @@ Vue.use(MagicUiYYX)
 </template>
 
 ```
+[Magic-UI官网](https://guduhuanzheyyx.gitee.io/magic-ui)

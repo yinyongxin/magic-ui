@@ -46,13 +46,14 @@ export default {
 @import '../assets/color.scss';
 .magic-button {
   &:focus {
-     outline:0;
+    outline:0;
+    animation: button 0.3s ease-in;
   }
   &:hover{
     box-shadow: 2px 2px 6px $content-color;
   }
-  &:focus {
-    animation: button 0.3s ease-in;
+  &:active {
+    background-color: #f3f3f3;
   }
   border: 1px solid $border-color;
   display: inline-block;
@@ -69,7 +70,7 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 32px;
+  height: 34px;
   padding: 0 15px;
   font-size: 14px;
   border-radius: 2px;
@@ -121,7 +122,7 @@ export default {
 }
 .is-circle {
   border-radius: 50%;
-  padding:  0 8.5px;
+  padding:  0 9px;
 }
 @keyframes button {
   0% {

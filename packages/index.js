@@ -1,4 +1,5 @@
 import './assets/fonts/font.scss'
+import './assets/reset.scss'
 
 import Button from './components/Button.vue'
 import Card from './components/Card.vue'

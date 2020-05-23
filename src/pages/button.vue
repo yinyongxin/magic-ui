@@ -1,6 +1,6 @@
 <template>
   <div class="button-card">
-    <m-card>
+    <m-card class="m-b-15">
       <template #title>
         正常按钮
       </template>
@@ -12,7 +12,7 @@
         <m-button class="m-r-10" type="error">错误按钮</m-button>
       </div>
     </m-card>
-    <m-card>
+    <m-card class="m-b-15">
       <template #title>
         带图标按钮
       </template>
@@ -24,7 +24,7 @@
         <m-button class="m-r-10" type="error" icon="m-icon-warning" >错误按钮</m-button>
       </div>
     </m-card>
-    <m-card>
+    <m-card class="m-b-15">
       <template #title>
         禁用按钮
       </template>
@@ -37,7 +37,7 @@
         <m-button class="m-r-10" type="primary" disabled>禁用</m-button>
       </div>
     </m-card>
-    <m-card>
+    <m-card class="m-b-15">
       <template #title>
         图标按钮
       </template>
@@ -49,7 +49,7 @@
         <m-button class="m-r-10" type="error" icon="m-icon-warning" ></m-button>
       </div>
     </m-card>
-    <m-card>
+    <m-card class="m-b-15">
       <template #title>
         原型按钮
       </template>
@@ -61,55 +61,6 @@
         <m-button class="m-r-10" circle type="error" icon="m-icon-warning" ></m-button>
       </div>
     </m-card>
-    <m-card>
-      <template #title>
-        原型按钮
-      </template>
-      <div>
-        <m-button class="m-r-10" circle @click="add"  icon="m-icon-minus"></m-button>
-        <m-button class="m-r-10" circle type="primary" icon="m-icon-plus" ></m-button>
-        <m-button class="m-r-10" circle type="success" icon="m-icon-check" ></m-button>
-        <m-button class="m-r-10" circle type="warning" icon="m-icon-close" ></m-button>
-        <m-button class="m-r-10" circle type="error" icon="m-icon-warning" ></m-button>
-      </div>
-    </m-card>
-    <m-card>
-      <template #title>
-        原型按钮
-      </template>
-      <div>
-        <m-button class="m-r-10" circle @click="add"  icon="m-icon-minus"></m-button>
-        <m-button class="m-r-10" circle type="primary" icon="m-icon-plus" ></m-button>
-        <m-button class="m-r-10" circle type="success" icon="m-icon-check" ></m-button>
-        <m-button class="m-r-10" circle type="warning" icon="m-icon-close" ></m-button>
-        <m-button class="m-r-10" circle type="error" icon="m-icon-warning" ></m-button>
-      </div>
-    </m-card>
-    <m-card>
-      <template #title>
-        原型按钮
-      </template>
-      <div>
-        <m-button class="m-r-10" circle @click="add"  icon="m-icon-minus"></m-button>
-        <m-button class="m-r-10" circle type="primary" icon="m-icon-plus" ></m-button>
-        <m-button class="m-r-10" circle type="success" icon="m-icon-check" ></m-button>
-        <m-button class="m-r-10" circle type="warning" icon="m-icon-close" ></m-button>
-        <m-button class="m-r-10" circle type="error" icon="m-icon-warning" ></m-button>
-      </div>
-    </m-card>
-    <m-card>
-      <template #title>
-        原型按钮
-      </template>
-      <div>
-        <m-button class="m-r-10" circle @click="add"  icon="m-icon-minus"></m-button>
-        <m-button class="m-r-10" circle type="primary" icon="m-icon-plus" ></m-button>
-        <m-button class="m-r-10" circle type="success" icon="m-icon-check" ></m-button>
-        <m-button class="m-r-10" circle type="warning" icon="m-icon-close" ></m-button>
-        <m-button class="m-r-10" circle type="error" icon="m-icon-warning" ></m-button>
-      </div>
-    </m-card>
-
   </div>
 </template>
 
