@@ -1,14 +1,21 @@
 <template>
-  <div class="magic-card" :class="[`is-shadow-${shadow}`]" :style="{width: width+'px'}">
-    <header v-if="$slots.title" class="magic-card-header">
-      <slot name="title">标题</slot>
-    </header>
-    <main class="magic-card-main">
+  <div 
+    class="magic-card" 
+    :class="[`is-shadow-${shadow}`]" 
+    :style="{width: width}"
+  >
+    <div 
+      v-if="$slots.header" 
+      class="magic-card-header" 
+      :class="{'magic-card-header-border': HeaderBorder}">
+      <slot name="header">标题</slot>
+    </div>
+
+    <div 
+      class="magic-card-main"
+      :style="BodyStyle">
       <slot>内容</slot>
-    </main>
-    <footer v-if="$slots.footer" class="magic-card-header">
-      <slot name="footer">标题</slot>
-    </footer>
+    </div>
   </div>
 </template>
 
@@ -20,9 +27,23 @@ export default {
       type: String,
       default: '100%'
     },
+    padding: {
+      type: String,
+      default: '18'
+    },
     shadow: {
       type: String,
       default: 'hover'
+    },
+    HeaderBorder: {
+      type: Boolean,
+      default: true
+    },
+    BodyStyle: {
+      type: Object,
+      default: () => {
+        return {}
+      }
     }
   },
   created() {
@@ -34,29 +55,23 @@ export default {
 <style lang="scss">
 .magic-card {
   border-radius: 4px;
-  border: 1px solid #ebeef5;
+  border: 1px solid $border-color;
   background-color: #fff;
-  overflow: hidden;
-  color: #303133;
-  transition: .4s;
+  transition: all .4s;
   .magic-card-header {
-    padding: 18px 20px;
-    border-bottom: 1px solid #e0e0e0;
-    box-sizing: border-box;
+    padding: 18px;
+  }
+  .magic-card-header-border {
+    border-bottom: 1px solid #DCDFE6;
   }
   .magic-card-main {
-    padding: 20px;
+    padding: 18px;
   }
 }
-.is-shadow-always{
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
+.is-shadow-always {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .3);
 }
-.is-shadow-hover{
-  &:hover {
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
-  }
-}
-.is-shadow-never{
+.is-shadow-never {
   box-shadow: none;
 }
 </style>

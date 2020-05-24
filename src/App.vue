@@ -31,9 +31,6 @@ export default {
     Menu,
   },
   methods: {
-    add() {
-      console.log('999999')
-    },
     closeShade() {
       this.isShade = false
     }

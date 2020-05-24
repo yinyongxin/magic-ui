@@ -102,7 +102,7 @@
 .HVH100 {
   height: 100vh;
 }
-.VH100 {
+.WHVH100 {
   width: 100vh;
   height: 100vh;
 }
@@ -135,12 +135,12 @@
 
 // 阴影 
 .box-shadow{
-  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 12px 0 rgba(0, 0, 0, 0.3);
 }
 .box-shadow-hover {
   transition: all 0.3s;
   &:hover{
-    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.3);
   }
 }
 

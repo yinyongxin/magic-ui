@@ -25,7 +25,7 @@ export default {
     },
     BackgroundColor: {
       type: String,
-      default: 'fgfgf'
+      default: ''
     },
     TextColor: {
       type: String,
@@ -36,15 +36,10 @@ export default {
       default: 'right'
     },
   },
-  created() {
-    console.log('width', this.width)
-    console.log('border', this.border)
-  },
 }
 </script>
 
 <style lang="scss">
-@import '../../assets/color.scss';
 .aside-menu {
   color: $title-color;
   height: 100%;

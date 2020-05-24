@@ -14,6 +14,8 @@
           Layout 布局</m-aside-menu-item>
         <m-aside-menu-item m-link="asideMenu">
           AsideMenu 侧边导航</m-aside-menu-item>
+        <m-aside-menu-item m-link="showBox">
+          ShowBox 展示盒</m-aside-menu-item>
       </m-aside-menu-group>
     </m-aside-menu>
   </div>

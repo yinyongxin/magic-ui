@@ -21,8 +21,7 @@ export default {
     color: inherit;
     .aside-Menu-group-header {
       padding: 5px 8px;
-      border-left: 5px solid rgba($color: sandybrown, $alpha: 1);
-      font-size: 14px;
+      border-left: 5px solid rgba($color: $ui, $alpha: 1);
     }
   }
 </style>

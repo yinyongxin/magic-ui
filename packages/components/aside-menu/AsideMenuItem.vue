@@ -41,7 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../assets/color.scss';
 .aside-menu-item {
   padding: 14px;
   color: inherit;
@@ -50,12 +49,12 @@ export default {
     cursor: pointer;
     user-select: none;
     padding-left: 18px;
-    background-color:  rgba($color: $ui, $alpha: 0.4);
+    background-color:  rgba($color: $ui, $alpha: 0.2);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
   }
 }
 .aside-menu-item-is-active {
-  background-color:  rgba($color: $ui, $alpha: 0.4);
-  border-right: 4px solid rgba($color: $ui, $alpha: 0.6);
+  background-color:  rgba($color: $ui, $alpha: 0.2);
+  border-right: 4px solid rgba($color: $ui, $alpha: 0.4);
 }
 </style>

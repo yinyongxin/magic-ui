@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
-  font-weight: 200;
+}
+body, html {
   font-size: 14px;
+  color: $main-color; 
+}
+button, input {
+  outline: none;
 }

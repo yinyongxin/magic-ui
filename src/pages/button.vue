@@ -1,7 +1,7 @@
 <template>
   <div class="button-card">
-    <m-card class="m-b-15">
-      <template #title>
+    <m-card class="m-b-5">
+      <template #header>
         正常按钮
       </template>
       <div>
@@ -12,8 +12,12 @@
         <m-button class="m-r-10" type="error">错误按钮</m-button>
       </div>
     </m-card>
+    <m-show-box class="m-b-15">
+      <div>
+      </div>
+    </m-show-box>
     <m-card class="m-b-15">
-      <template #title>
+      <template #header>
         带图标按钮
       </template>
       <div>
@@ -25,7 +29,7 @@
       </div>
     </m-card>
     <m-card class="m-b-15">
-      <template #title>
+      <template #header>
         禁用按钮
       </template>
       <div>
@@ -38,7 +42,7 @@
       </div>
     </m-card>
     <m-card class="m-b-15">
-      <template #title>
+      <template #header>
         图标按钮
       </template>
       <div>
@@ -50,7 +54,7 @@
       </div>
     </m-card>
     <m-card class="m-b-15">
-      <template #title>
+      <template #header>
         原型按钮
       </template>
       <div>
@@ -66,6 +70,10 @@
 
 <script>
 export default {
+  data() {
+    return {
+    }
+  },
   methods: {
     add() {
       console.log('9999')

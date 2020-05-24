@@ -7,4 +7,5 @@ export default [
   {path: '/button', name: 'button', component: lazyLoading('button')},
   {path: '/layout', name: 'layout', component: lazyLoading('layout')},
   {path: '/asideMenu', name: 'asideMenu', component: lazyLoading('asideMenu')},
+  {path: '/showBox', name: 'showBox', component: lazyLoading('showBox')},
 ]
