@@ -40,6 +40,8 @@ export default {
 
 <style lang="scss">
 #app {
+  // min-width: 1200px;
+  // overflow-x: scroll;
   .main-show {
     height: 100vh;
     overflow-y: scroll;

@@ -8,6 +8,8 @@
         首页</m-aside-menu-item>
       <m-aside-menu-group>
         <template #title>基本的</template>
+        <m-aside-menu-item m-link="icon">
+          Icon 图标</m-aside-menu-item>
         <m-aside-menu-item m-link="button">
           Button 按钮</m-aside-menu-item>
         <m-aside-menu-item m-link="layout"> 

@@ -8,4 +8,5 @@ export default [
   {path: '/layout', name: 'layout', component: lazyLoading('layout')},
   {path: '/asideMenu', name: 'asideMenu', component: lazyLoading('asideMenu')},
   {path: '/showBox', name: 'showBox', component: lazyLoading('showBox')},
+  {path: '/icon', name: 'icon', component: lazyLoading('icon')},
 ]
