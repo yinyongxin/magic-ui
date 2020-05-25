@@ -8,3 +8,9 @@ body, html {
 button, input {
   outline: none;
 }
+.magic-aside-submenu [class^='m-icon-'] {
+  margin-right: 5px;
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+}

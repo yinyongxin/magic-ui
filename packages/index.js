@@ -10,6 +10,7 @@ import ShowBox from './components/ShowBox.vue'
 import AsideMenu from './components/aside-menu/AsideMenu.vue'
 import AsideMenuGroup from './components/aside-menu/AsideMenuGroup.vue'
 import AsideMenuItem from './components/aside-menu/AsideMenuItem.vue'
+import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 
 let components = [
   Button,
@@ -18,6 +19,7 @@ let components = [
   Col,
   ShowBox,
   AsideMenu,
+  AsideSubMenu,
   AsideMenuGroup,
   AsideMenuItem,
 ]

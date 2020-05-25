@@ -1,7 +1,8 @@
 <template>
   <div class="aside-Menu-group">
-    <header class="aside-Menu-group-header">
-      <slot name="title"></slot>
+    <header v-if="$slots.title" class="aside-Menu-group-header">
+      <span class="line"></span>
+      <slot name="title">分组标题</slot>
     </header>
     <main>
       <slot></slot>
@@ -17,11 +18,16 @@ export default {
 
 <style lang="scss">
   .aside-Menu-group {
-    margin-bottom: 15px;
     color: inherit;
+    padding: 10px 0;
     .aside-Menu-group-header {
-      padding: 5px 8px;
-      border-left: 5px solid rgba($color: $ui, $alpha: 1);
+      height: 48px;
+      line-height: 48px;
+      padding: 0 40px;
+      .line {
+        border: 2px solid rgba($color: $ui, $alpha: 1);
+        margin-right: 6px;
+      }
     }
   }
 </style>

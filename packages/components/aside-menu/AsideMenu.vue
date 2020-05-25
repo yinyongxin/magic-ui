@@ -36,6 +36,9 @@ export default {
       default: ''
     },
   },
+  mounted() {
+    console.log('所有子组件', this.$children)
+  }
 }
 </script>
 

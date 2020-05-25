@@ -32,6 +32,10 @@ export default {
       type: String,
       default: '50vh'
     },
+    shadow: {
+      type: String,
+      default: 'nover'
+    },
     CloseTitle: {
       type: String,
       default: '打开内容'
