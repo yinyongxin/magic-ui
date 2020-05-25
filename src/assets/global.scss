@@ -153,3 +153,56 @@
 .border-r {
   border-radius: 50%;
 }
+
+
+
+
+// 显示代码
+pre code {
+  display: inline;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  vertical-align: top;
+}
+.hljs {
+  color: #000;
+  margin: 0;
+  border: none;
+  max-height: none;
+  border-radius: 0;
+  line-height: 1.8;
+  font-family: Menlo,Monaco,Consolas,Courier,monospace;
+  font-size: 12px;
+  padding: 18px 24px;
+  background-color: #fafafa;
+  border: 1px solid #eaeefb;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  -webkit-font-smoothing: auto;
+}
+.hljs-keyword, 
+.hljs-selector-tag, 
+.hljs-title, 
+.hljs-section, 
+.hljs-built_in, 
+.hljs-doctag, 
+.hljs-type, 
+.hljs-tag, 
+.hljs-selector-id, 
+.hljs-selector-class,
+ .hljs-strong {
+  color: #3182bd;
+}
+.hljs-name {
+  color: #e45649;
+}

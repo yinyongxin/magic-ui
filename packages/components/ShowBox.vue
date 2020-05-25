@@ -1,5 +1,5 @@
 <template>
-  <div class="magic-show-box" :style="BodyStyle">
+  <div class="magic-show-box" :class="[`is-shadow-${shadow}`]"  :style="{...BodyStyle, width}">
     <div class="magic-show-box-main" :style="{height: isClose? '0' : height}">
       <div class="magic-show-box-content">
         <slot>请输入内容</slot>
@@ -10,11 +10,7 @@
       :class="{'is-fixed': !isClose}" @click="open"
       :style="{borderTopWidth: isClose? '0' : '1px'}"
       >
-      <span>
-        <slot name='on-off-title'>
-          {{ isClose? CloseTitle : OpenTitle}}
-        </slot>
-      </span>
+        <span>{{isClose? CloseTitle : OpenTitle }}</span>
     </div>
   </div>
 </template>
@@ -28,6 +24,10 @@ export default {
     }
   },
   props: {
+    width: {
+      type: String,
+      default: '100%'
+    },
     height: {
       type: String,
       default: '50vh'
@@ -57,11 +57,6 @@ export default {
 .magic-show-box {
   border-radius: 2px;
   border: 1px solid $border-color;
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   .magic-show-box-main { 
     height: 0px;
     overflow: hidden;
@@ -74,6 +69,16 @@ export default {
     padding: 14px;
   }
   .magic-show-box-on-off {
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    &:hover {
+      cursor: pointer;
+      color: $ui;
+      background-color: rgba($color: $ui, $alpha: 0.1);
+    }
     border-top: 1px solid #eaeefb;
     height: 44px;
     text-align: center;

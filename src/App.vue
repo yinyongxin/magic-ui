@@ -8,7 +8,7 @@
     <m-row>
       <Menu class="box-shadow-hover"></Menu>
       <m-col class="main-show">
-        <div class="p-15">
+        <div class="p-30">
           <transition name="turn-page" mode="out-in">
             <router-view></router-view>
           </transition>
@@ -40,11 +40,8 @@ export default {
 
 <style lang="scss">
 #app {
-  // min-width: 1200px;
-  // overflow-x: scroll;
   .main-show {
-    height: 100vh;
-    overflow-y: scroll;
+    margin-left: 240px;
   }
   .shade {
     position: absolute;

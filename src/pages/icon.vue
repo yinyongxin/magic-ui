@@ -337,12 +337,19 @@
         border-radius: 2px;
         width: 140px;
         height: 140px;
+        &>span {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+        }
         i {
           transition: color .15s linear;
           &:hover {
             color: $ui;
           }
-          padding-top: 34px;
           display: block;
           text-align: center;
           font-size: 32px;
@@ -354,15 +361,11 @@
           &:hover {
             color: $ui;
           }
+          margin-top: 15px;
           display: block;
-          padding: 0 3px;
           text-align: center;
         }
-        &>span {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
+        
       }
     }
   }

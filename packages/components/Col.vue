@@ -1,11 +1,13 @@
 <template>
+      <!-- flex: span, -->
   <div 
     class="magic-col" 
     :style="{
-      flex: span, 
+      width: width,
       paddingLeft: MRow.gutter/2 + 'px', 
       paddingRight: MRow.gutter/2 + 'px'
     }"
+    :class="{}"
   >
     <slot></slot>
   </div>
@@ -18,7 +20,11 @@ export default {
     span: {
       type: Number,
       default: 1
-    }
+    },
+    width: {
+      type: String,
+      default: '100%'
+    },
   },
   inject: ['MRow'],
   created() {
@@ -29,6 +35,5 @@ export default {
 
 <style lang="scss">
   .magic-col {
-     
   }
 </style>

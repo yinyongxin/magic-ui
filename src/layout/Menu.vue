@@ -2,7 +2,7 @@
   <div class="menu">
     <m-aside-menu 
       :width="240"
-      isBorder
+      isBorder='right'
     >
       <m-aside-menu-item m-link="home">
         首页</m-aside-menu-item>
@@ -32,7 +32,9 @@ export default {
 
 <style lang="scss">
 .menu {
+  position:fixed ;
   height: 100vh;
-  background-color: #545c64;
+  top: 0;
+  left: 0;
 }
 </style>

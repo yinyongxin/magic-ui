@@ -2,8 +2,8 @@
   <div 
     class="aside-menu" 
     :class="{
-      'aside-menu-border-right': IsBorder == 'right'? true : false,
-      'aside-menu-border-left': IsBorder == 'left'? true : false
+      'aside-menu-border-right': isBorder == 'right'? true : false,
+      'aside-menu-border-left': isBorder == 'left'? true : false
     }"
     :style="{
       width: width+'px',
@@ -31,9 +31,9 @@ export default {
       type: String,
       default: ''
     },
-    IsBorder: {
+    isBorder: {
       type: String,
-      default: 'right'
+      default: ''
     },
   },
 }

@@ -1,5 +1,10 @@
 <template>
-  <div class="magic-row">
+  <div 
+    class="magic-row" 
+    :style="{
+      justifyContent: justify,
+    }"
+  >
     <slot></slot>
   </div>
 </template>
@@ -11,6 +16,10 @@ export default {
     gutter: {
       type: Number,
       default: 0
+    },
+    justify: {
+      type: String,
+      default: 'flex-start'
     }
   },
   provide() {
@@ -26,6 +35,5 @@ export default {
 <style lang="scss">
   .magic-row {
     display: flex;
-    justify-content: space-between;
   }
 </style>

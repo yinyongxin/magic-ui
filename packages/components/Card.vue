@@ -68,10 +68,4 @@ export default {
     padding: 18px;
   }
 }
-.is-shadow-always {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .3);
-}
-.is-shadow-never {
-  box-shadow: none;
-}
 </style>

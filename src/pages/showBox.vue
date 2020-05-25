@@ -1,10 +1,11 @@
 <template>
   <div class="home">
-    <h1>展示盒</h1>
+    <h1>BoxShow 展示盒</h1>
+    <p class="m-b-20">可以将想要展示的内容隐藏起来。</p>
     <m-show-box>
-      <template>
-          gdfngsngnglksdngkd
-      </template>
+      <div>
+          这是需要展示的内容
+      </div>
     </m-show-box>
   </div>
 </template>
