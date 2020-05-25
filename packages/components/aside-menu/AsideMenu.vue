@@ -1,6 +1,6 @@
 <template>
+<div class="aside-menu" >
   <div 
-    class="aside-menu" 
     :class="{
       'aside-menu-border-right': isBorder == 'right'? true : false,
       'aside-menu-border-left': isBorder == 'left'? true : false
@@ -13,11 +13,27 @@
   >
     <slot></slot>
   </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'MAsideMenu',
+  data() {
+    return {
+      activeIndex: '',
+      submenuitems: null
+    }
+  },
+  inject: ['submenuitems'],
+  provide() {
+    return {
+      rootMenu: {
+        data: this.$data,
+        props: this.$props,
+      }
+    }
+  },
   props: {
     width: {
       type: Number,
@@ -35,9 +51,20 @@ export default {
       type: String,
       default: ''
     },
+    DefaultActive: {
+      type: String,
+      default: ''
+    }
   },
+
   mounted() {
-    console.log('所有子组件', this.$children)
+    // console.log('所有子组件', this.$children)
+    console.log(this.submenuitems)
+    this.submenuitems = this.submenuitems
+    // this.$children.forEach(item => {
+    //   if(item.$children.length > 0) console.log('还有子组件')
+    //   if(item.index) console.log('子组件index',item.index)
+    // }) 
   }
 }
 </script>

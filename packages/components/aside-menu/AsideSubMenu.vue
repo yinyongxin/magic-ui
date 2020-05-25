@@ -5,15 +5,16 @@
       class="magic-aside-submenu-title" 
       :class="{
         'submenu-is-openMenu': !isClose,
-        'aside-submenu-is-active': !mainSlot && (this.$route.name == this.LinkName || this.$route.fullPath == this.MLink)
+        'aside-submenu-is-active': isActive
       }" 
       @click="openMenu">
       <span>
         <i v-if="icon" :class="icon"></i>
-        <slot name="title">标题</slot>
+        <slot name="title">菜单标题</slot>
       </span>
       <i v-if="mainSlot" :class="{close: isClose}" class="m-icon-arrow-up close-and-openMenu"></i>
     </header>
+
     <!-- 菜单主体，如果默认插糟没有内容，就不再渲染 -->
     <main 
       v-if="mainSlot" 
@@ -31,8 +32,18 @@ export default {
   data() {
     return {
       isClose: true,
+      isActive: false,
       height: '',
       mainSlot: this.$slots.default
+    }
+  },
+  inject: ['rootMenu'],
+  provide() {
+    return {
+      submenuitems: {
+        data: this.$data,
+        props: this.$props,
+      }
     }
   },
   props: {
@@ -51,9 +62,24 @@ export default {
     open: {
       type: Boolean,
       default: false
+    },
+    index: {
+      type: String,
+      default: ''
+    }
+  },
+  watch: {
+    '$route.name'() {
+      // console.log(this.$route)
+      if(!this.mainSlot && (this.$route.name == this.LinkName || this.$route.fullPath == this.MLink)) {
+        this.isActive = true
+      }else {
+        this.isActive = false
+      }
     }
   },
   mounted() {
+    
     // 获取菜单主体的高度
     if(this.mainSlot) this.height = window.getComputedStyle(this.$refs.reference).height
     if(this.open) {
