@@ -23,13 +23,4 @@ Vue.use(MagicUiYYX)
 
 ## 第三步：使用
 通过导入之后可以在全局的任何位置使用
-例如
-```vue
-<template>
-  <div>
-    <m-button>按钮</button>
-  </div>
-</template>
-
-```
 [Magic-UI官网](https://guduhuanzheyyx.gitee.io/magic-ui)
