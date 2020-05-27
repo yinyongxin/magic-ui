@@ -74,7 +74,6 @@ export default {
   },
   methods: {
     add() {
-      console.log('9999')
     }
   }
 }

@@ -1,19 +1,20 @@
 <template>
-<div class="aside-menu" >
-  <div 
-    :class="{
-      'aside-menu-border-right': isBorder == 'right'? true : false,
-      'aside-menu-border-left': isBorder == 'left'? true : false
-    }"
-    :style="{
-      width: width+'px',
-      backgroundColor: BackgroundColor,
-      color: TextColor,
-    }"
-  >
-    <slot></slot>
-  </div>
-</div>
+  <!-- <div class="aside-menu" > -->
+    <div 
+      class="aside-menu"
+      :class="{
+        'aside-menu-border-right': isBorder == 'right'? true : false,
+        'aside-menu-border-left': isBorder == 'left'? true : false
+      }"
+      :style="{
+        width: width+'px',
+        backgroundColor: BackgroundColor,
+        color: TextColor,
+      }"
+    >
+      <slot></slot>
+    </div>
+  <!-- </div> -->
 </template>
 
 <script>
