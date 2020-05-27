@@ -12,6 +12,10 @@ import AsideMenuGroup from './components/aside-menu/AsideMenuGroup.vue'
 import AsideMenuItem from './components/aside-menu/AsideMenuItem.vue'
 import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 
+// From 表单
+import Switch from './components/Switch.vue'
+
+
 let components = [
   Button,
   Card,
@@ -22,6 +26,7 @@ let components = [
   AsideSubMenu,
   AsideMenuGroup,
   AsideMenuItem,
+  Switch
 ]
 
 const install = (Vue) => {

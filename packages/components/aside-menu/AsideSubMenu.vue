@@ -139,8 +139,6 @@ export default {
     animation: aside-menu-itme-click 0.5s;
   }
   .magic-aside-submenu-main {
-    &>div {
-    }
     transition: all 0.5s;
     overflow: hidden;
   }

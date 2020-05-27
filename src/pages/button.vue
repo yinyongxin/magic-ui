@@ -2,9 +2,8 @@
   <div class="button-dome">
     <h1>Button 按钮</h1>
     <p class="m-b-20">常用的操作按钮。</p>
-    <h2>Button 基础用法</h2>
+    <h2>基础用法</h2>
     <p class="m-b-20">基础的按钮用法。</p>
-    <!-- 正常按钮 -->
     <m-card class="m-b-40">
       <div>
         <m-button class="m-r-10" @click="add">默认按钮</m-button>
@@ -15,9 +14,8 @@
       </div>
     </m-card>
     
-    <h2>Button 带图标按钮</h2>
+    <h2>带图标按钮</h2>
     <p class="m-b-20">基础的带图标按钮。</p>
-    <!-- 带图标按钮 -->
     <m-card class="m-b-40">
       <div>
         <m-button class="m-r-10" @click="add"  icon="m-icon-minus">默认按钮</m-button>
@@ -28,9 +26,8 @@
       </div>
     </m-card>
 
-    <h2>Button 禁用按钮</h2>
+    <h2>禁用按钮</h2>
     <p class="m-b-20">基础的禁用按钮。</p>
-    <!-- 禁用按钮 -->
     <m-card class="m-b-40">
       <div>
         <m-button class="m-r-10" @click="add" disabled>默认按钮</m-button>
@@ -42,9 +39,8 @@
       </div>
     </m-card>
 
-    <h2>Button 图标按钮</h2>
+    <h2>图标按钮</h2>
     <p class="m-b-20">基础的图标按钮。</p>
-    <!-- 图标按钮 -->
     <m-card class="m-b-40">
       <div>
          <m-button class="m-r-10" @click="add"  icon="m-icon-minus"></m-button>
@@ -55,9 +51,8 @@
       </div>
     </m-card>
 
-    <h2>Button 圆形按钮</h2>
+    <h2>圆形按钮</h2>
     <p class="m-b-20">基础的圆形按钮。</p>
-    <!-- 圆形按钮 -->
     <m-card class="m-b-40">
       <div>
         <m-button class="m-r-10" circle @click="add"  icon="m-icon-minus"></m-button>

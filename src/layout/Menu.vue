@@ -24,6 +24,11 @@
         <m-aside-menu-item index='6' link-name="asideMenu">
           AsideMenu 侧边导航</m-aside-menu-item>
       </m-aside-menu-group>
+      <m-aside-menu-group>
+        <template #title>From</template>
+        <m-aside-menu-item index='6' link-name="switch">
+          Switch 开关</m-aside-menu-item>
+      </m-aside-menu-group>
 
       <m-aside-submenu icon="m-icon-s-tools">
         <template #title>

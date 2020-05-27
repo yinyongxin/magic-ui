@@ -22,16 +22,13 @@ export default {
   data() {
     return {
       activeIndex: '',
-      submenuitems: null
+      // submenuitems: null
     }
   },
-  inject: ['submenuitems'],
+  // inject: ['submenuitems'],
   provide() {
     return {
-      rootMenu: {
-        data: this.$data,
-        props: this.$props,
-      }
+      rootMenu: this
     }
   },
   props: {
@@ -59,8 +56,8 @@ export default {
 
   mounted() {
     // console.log('所有子组件', this.$children)
-    console.log(this.submenuitems)
-    this.submenuitems = this.submenuitems
+    // console.log(this.submenuitems)
+    // this.submenuitems = this.submenuitems
     // this.$children.forEach(item => {
     //   if(item.$children.length > 0) console.log('还有子组件')
     //   if(item.index) console.log('子组件index',item.index)
