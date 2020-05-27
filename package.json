@@ -1,6 +1,6 @@
 {
   "name": "magic-ui-yyx",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/magic-ui.umd.min.js",
   "author": {
     "name": "银永鑫"
