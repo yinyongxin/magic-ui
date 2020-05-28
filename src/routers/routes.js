@@ -13,4 +13,6 @@ export default [
   {path: '/showBox', name: 'showBox', component: lazyLoading('showBox')},
   {path: '/icon', name: 'icon', component: lazyLoading('icon')},
   {path: '/switch', name: 'switch', component: lazyLoading('switch')},
+  {path: '/card', name: 'card', component: lazyLoading('card')},
+  {path: '/table', name: 'table', component: lazyLoading('table')},
 ]

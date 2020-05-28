@@ -16,6 +16,12 @@ import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 import Switch from './components/Switch.vue'
 
 
+//Table 表格
+import Table from './components/table/Table.vue'
+import TableColumn from './components/table/TableColumn.vue'
+
+
+
 let components = [
   Button,
   Card,
@@ -26,7 +32,9 @@ let components = [
   AsideSubMenu,
   AsideMenuGroup,
   AsideMenuItem,
-  Switch
+  Switch,
+  Table,
+  TableColumn
 ]
 
 const install = (Vue) => {

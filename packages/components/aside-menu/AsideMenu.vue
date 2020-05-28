@@ -2,10 +2,13 @@
   <!-- <div class="aside-menu" > -->
     <div 
       class="aside-menu"
-      :class="{
+      :class="[
+        {
         'aside-menu-border-right': isBorder == 'right'? true : false,
-        'aside-menu-border-left': isBorder == 'left'? true : false
-      }"
+        'aside-menu-border-left': isBorder == 'left'? true : false,
+        },
+        `is-shadow-${shadow}`
+      ]"
       :style="{
         width: width+'px',
         backgroundColor: BackgroundColor,
@@ -52,6 +55,10 @@ export default {
     DefaultActive: {
       type: String,
       default: ''
+    },
+    shadow: {
+      type: String,
+      default: 'nover'
     }
   },
 

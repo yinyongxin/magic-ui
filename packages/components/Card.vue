@@ -54,6 +54,7 @@ export default {
 
 <style lang="scss">
 .magic-card {
+  display: inline-block;
   border-radius: 4px;
   border: 1px solid $border-color;
   background-color: #fff;

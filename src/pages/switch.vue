@@ -7,6 +7,16 @@
       <m-switch v-model="value"></m-switch>
     </m-card>
 
+    <h2 class="m-b-20">禁用状态</h2>
+    <m-card class="m-b-40">
+      <m-switch disabled v-model="value4" class="m-r-10"></m-switch>
+      <m-switch
+        disabled
+        active-text="按月付费"
+        inactive-text="按年付费" 
+        v-model="value5"></m-switch>
+    </m-card>
+
     <h2 class="m-b-20">自定义宽度</h2>
     <m-card class="m-b-40">
       <m-switch v-model="value1" :width="60"></m-switch>
@@ -40,6 +50,8 @@ export default {
       value1: false,
       value2: false,
       value3: false,
+      value4: false,
+      value5: false,
     }
   },
   
