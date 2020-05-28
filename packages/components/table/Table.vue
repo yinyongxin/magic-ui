@@ -4,7 +4,11 @@
       width: width,
       textAlign: align
     }"
-    class="magic-table">
+    cellspacing="0" 
+    cellpadding="0"
+    :class="['magic-table', {
+      isBorder: border
+    }]">
 
     <m-thead>
       <m-tr header>
@@ -48,6 +52,10 @@ export default {
       type: String,
       default: '100%'
     },
+    border: {
+      type: Boolean,
+      default: false
+    },
     data: {
       type: Array,
       default: () => []
@@ -84,10 +92,14 @@ export default {
 <style lang="scss">
 .magic-table {
   .table-magic-tr {
-    transition: all 0.3s;
+    transition: all 0.5s;
     &:hover {
-      background-color: $hover-color;
+      background-color: #f3f3f3;
     }
   }
+}
+.isBorder {
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
 }
 </style>

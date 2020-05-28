@@ -25,8 +25,8 @@ export default {
 
 <style lang='scss'>
 .magic-table-tr {
-  border-bottom: 1px solid $border-color;
   width: 100%;
+  border-bottom: 1px solid $border-color;
   background-color: #fff;
   display: flex;
 }

@@ -1,6 +1,6 @@
 <template>
   <thead class="magic-thead">
-      <slot></slot>
+    <slot></slot>
   </thead>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss">
 .magic-thead {
-  width: 100%;
+  border-bottom: 1px solid $border-color;
   font-weight: 600;
 }
 </style>

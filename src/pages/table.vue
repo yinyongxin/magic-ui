@@ -4,7 +4,7 @@
     <p>为网站提供数据展示。</p>
     <m-card class="m-b-40">
       <div>
-        <m-table :data="tableData">
+        <m-table border :data="tableData">
           <m-table-column
             width="50%"
             prop="date"
@@ -32,16 +32,16 @@ export default {
     return {
       tableData: [{
         date: '2016-05-02',
-        name: '王小虎',
+        name: '银永鑫',
         address: '上海市普陀区金沙江路 1518 弄'
       }, {
         date: '2016-05-04',
-        name: '王小虎',
+        name: '银永鑫',
         address: '上海市普陀区金沙江路 1517 弄'
       }, 
       {
         date: '2016-05-03',
-        name: '王小虎',
+        name: '银永鑫',
         address: '上海市普陀区金沙江路 1516 弄'
       }]
     }
