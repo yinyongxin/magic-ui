@@ -6,11 +6,12 @@
     }"
     cellspacing="0" 
     cellpadding="0"
-    :class="['magic-table', {
+    :class="['magic-table',
+      `is-shadow-${shadow}`, {
       isBorder: border
     }]">
 
-    <m-thead>
+    <m-thead v-if="showHeader">
       <m-tr header>
         <slot></slot>
       </m-tr>
@@ -63,6 +64,14 @@ export default {
     align: {
       type: String,
       default: 'left'
+    },
+    shadow: {
+      type: String,
+      default: 'nover'
+    },
+    showHeader: {
+      type: Boolean,
+      default: true
     }
   },
   provide() {
@@ -91,6 +100,8 @@ export default {
 
 <style lang="scss">
 .magic-table {
+  border-collapse: separate; // 设置表格边框的间距问题
+  transition: all 0.5s;
   .table-magic-tr {
     transition: all 0.5s;
     &:hover {

@@ -9,7 +9,7 @@ const router = new VueRouter({
   routes,
   scrollBehavior (to, from, savedPosition) {
     // console.log(to)
-    return { x: 0, y: 0 }
+    // return { x: 0, y: 0 }
   }
 })
 

@@ -1,5 +1,8 @@
 <template>
-  <tbody class="magic-tbody">
+  <tbody
+    cellspacing="0" 
+    cellpadding="0" 
+    class="magic-tbody">
     <slot></slot>
   </tbody>
 </template>
@@ -16,5 +19,6 @@ export default {
 
 <style lang="scss">
 .magic-tbody {
+  width: 100%;
 }
 </style>

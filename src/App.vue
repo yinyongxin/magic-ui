@@ -9,9 +9,9 @@
       <Menu class="box-shadow-hover"></Menu>
       <m-col class="main-show">
         <div class="p-30">
-          <transition name="turn-page" mode="out-in">
+          <!-- <transition name="turn-page" mode="out-in"> -->
             <router-view></router-view>
-          </transition>
+          <!-- </transition> -->
         </div>
       </m-col>
     </m-row>
@@ -42,6 +42,7 @@ export default {
 #app {
   .main-show {
     margin-left: 240px;
+    min-width: 1000px;
   }
   .shade {
     position: absolute;
