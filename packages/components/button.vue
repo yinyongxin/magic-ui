@@ -3,7 +3,7 @@
     @click="handleClick"
     class="magic-button" 
     :class="[`magic-button-${type}`, {
-      'is-disabled': disabled,
+      'button-is-disabled': disabled,
       'is-circle': circle,
     }]"
     :disabled="disabled"
@@ -106,7 +106,7 @@ export default {
     background-color: $error-dark;
   }
 }
-.is-disabled {
+.button-is-disabled {
   background-color: #f5f7fa;
   border-color: #e4e7ed;
   color: #c0c4cc;

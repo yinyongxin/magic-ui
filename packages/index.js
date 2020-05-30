@@ -14,6 +14,7 @@ import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 
 // From 表单
 import Switch from './components/Switch.vue'
+import Input from './components/Input.vue'
 
 
 //Table 表格
@@ -32,7 +33,10 @@ let components = [
   AsideSubMenu,
   AsideMenuGroup,
   AsideMenuItem,
+
+  // 表单
   Switch,
+  Input,
   Table,
   TableColumn
 ]

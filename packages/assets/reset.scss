@@ -7,25 +7,12 @@ body, html {
 }
 button, input {
   outline: none;
+  // cursor: pointer;
 }
+
 .magic-aside-submenu [class^='m-icon-'] {
   margin-right: 5px;
   text-align: center;
   font-size: 18px;
   vertical-align: middle;
 }
-// button {
-//   width: 100%;
-//   border: none;
-//   background: none;
-//   text-align: left;
-//   cursor: pointer;
-//   touch-action: manipulation;
-//   white-space: nowrap;
-//   font-size: inherit;
-//   user-select: none;
-//   -ms-touch-action: manipulation;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-// }

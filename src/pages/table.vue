@@ -22,7 +22,7 @@
         </m-table-column>
       </m-table>
     </m-card>
-    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="640px">
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="670px">
       <pre>
         <code>
           &lt;m-table :data="tableData"&gt;
