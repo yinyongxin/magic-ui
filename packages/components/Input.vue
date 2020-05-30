@@ -15,15 +15,21 @@
         'input-left-icon': $slots.prefix,
         'input-right-icon': $slots.suffix,
       }]"
+      :minlength="minlength"
+      :maxlength="maxlength"
       :disabled="disabled"
       autocomplete="off"
       class="magic-input-inner" 
       :type="typeName" 
       :value="value" 
       :placeholder="placeholder"
+      @change="inputChange"
       @input="inputChange($event)">
       <span v-if="$slots.suffix" class="right-icon">
         <slot name="suffix">右</slot>
+      </span>
+      <span v-if="minlength||maxlength" class="min-max-number">
+        {{minlengthNum}}/{{maxlength}}
       </span>
       <transition name="slide-fade">
         <span @click="clearableFn" v-if="clearable && (value!=='')" class="disabled-clearable-icon">
@@ -41,7 +47,8 @@ export default {
   name: 'MInput',
   data() {
     return {
-      typeName: this.type
+      typeName: this.type,
+      minlengthNum: 0
     }
   },
   props: {
@@ -52,6 +59,12 @@ export default {
     placeholder: {
       type: String,
       default: '请输入内容'
+    },
+    maxlength: {
+      type: String,
+    },
+    minlength: {
+      type: String,
     },
     disabled: {
       type: Boolean,
@@ -80,6 +93,11 @@ export default {
   },
   methods: {
     inputChange(e) {
+      // if(e.target.value.length == 0 && this.minlength) {
+      //   this.minlengthNum = parseInt(this.minlength)
+      // }else {
+        this.minlengthNum =  e.target.value.length
+      // }
       this.$emit('input', e.target.value)
     },
     showPasswordFn() {
@@ -91,7 +109,7 @@ export default {
     },
     clearableFn() {
       this.$emit('input', '')
-    }
+    },
   },
 }
 </script>
@@ -160,6 +178,14 @@ export default {
     font-size: 20px;
     color: #606266;
     top: 8px;
+    right: 10px;
+  }
+  .min-max-number {
+    cursor: pointer;
+    position: absolute;
+    font-size: 14px;
+    color: #606266;
+    top: 10px;
     right: 10px;
   }
   .slide-fade-enter-active {
