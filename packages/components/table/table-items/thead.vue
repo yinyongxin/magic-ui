@@ -13,7 +13,6 @@ export default {
 <style lang="scss">
 .magic-thead {
   width: 100%;
-  border-bottom: 1px solid $border-color;
   font-weight: 600;
 }
 </style>

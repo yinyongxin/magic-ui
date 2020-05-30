@@ -1,9 +1,6 @@
 <template>
   <td
-    :style="{width: width}"
-    :class="['magic-td', {
-      'magic-td-border-right': rootTable.border
-    }]"
+    :class="['magic-td']"
     >
       <slot></slot>
   </td>
@@ -29,12 +26,6 @@ export default {
 
 <style lang='scss'>
 .magic-td {
-  &>div {
-    width: 100%;
-  }
   padding: 12px 0;
-}
-.magic-td-border-right {
-  border-right: 1px solid $border-color;
 }
 </style>

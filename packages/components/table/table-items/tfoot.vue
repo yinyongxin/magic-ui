@@ -5,10 +5,8 @@
 </template>
 
 <script>
-import tableMinix from '../table-minix'
 export default {
   name: 'MTfoot',
-  mixins: [tableMinix]
 } 
 </script>
 

@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      slotDefaultList: []
+      // slotDefaultList: []
     }
   },
   props: {
@@ -80,17 +80,14 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$slots.default)
-    // this.$nextTick(function() {
-      this.slotDefaultList = this.$slots.default.map(item => {
-        return {
-          label: item.componentInstance.label,
-          prop: item.componentInstance.prop,
-          width: item.componentInstance.width,
-        }
-      // })  
-      // console.log(this.slotDefaultList) 
-    })
+
+    // this.slotDefaultList = this.$slots.default.map(item => {
+    //   return {
+    //     label: item.componentInstance.label,
+    //     prop: item.componentInstance.prop,
+    //     width: item.componentInstance.width,
+    //   }
+    // })
 
   },
   methods: {
@@ -100,7 +97,7 @@ export default {
 
 <style lang="scss">
 .magic-table {
-  border-collapse: separate; // 设置表格边框的间距问题
+  border-collapse: collapse; // 设置表格边框的间距问题
   transition: all 0.5s;
   .table-magic-tr {
     transition: all 0.5s;

@@ -1,38 +1,35 @@
 <template>
-  <m-td class="magic-table-column" :width="width">
+  <td 
+    :style="{width: width}"
+    :class="['magic-table-column', {
+      'magic-td-border-right': rootTable.border
+    }]">
     <div class="table-cell" >
       <slot 
         v-if="trTable.header"
         name="header"
         >{{label}}</slot>
       <slot
+        :scope="rowInfo"
         v-if="!trTable.header"
-        >{{rootTable.data[trTable.rowIndex][prop]}}</slot>
+        >{{rowInfo.row[prop]}}</slot>
     </div>
-  </m-td>
+  </td>
 </template>
 
 <script>
-import MThead from './table-items/thead'
-import MTbody from './table-items/tbody'
-import MTfoot from './table-items/tfoot'
-
-import MTh from './table-items/th'
-import MTr from './table-items/tr'
-import MTd from './table-items/td'
-
-
 import tableMinix from './table-minix'
 export default {
   name: 'MTableColumn',
   mixins: [tableMinix],
   inject: ['trTable','rootTable'],
-  components: {
-    MThead,
-    MTbody,
-    MTfoot,
-    MTh,
-    MTd
+  data() {
+    return {
+      rowInfo: { // 每一行的数据
+        row: this.rootTable.data[this.trTable.rowIndex],
+        $index: this.trTable.rowIndex
+      }
+    }
   },
   props: {
     label: {
@@ -51,15 +48,16 @@ export default {
       default: '100%'
     },
   },
-  created() {
-    console.log(this.trTable.header)
-  },
 } 
 </script>
 
 <style lang="scss">
 .magic-table-column {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
   .table-cell {
+    width: 100%;
     padding: 0 10px;
   }
 }
