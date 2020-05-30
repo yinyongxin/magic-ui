@@ -5,7 +5,7 @@
       class="magic-aside-submenu-title" 
       :class="{
         'submenu-is-openMenu': !isClose,
-        'aside-submenu-is-active': isActive
+        'aside-submenu-is-active': isActive&&rootMenu.activeAnimation
       }" 
       @click="openMenu">
       <span>

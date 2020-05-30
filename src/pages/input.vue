@@ -157,7 +157,7 @@
         v-model="value6">
       </m-input>
     </m-card>
-    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="200px">
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="460px">
       <pre>
         <code>
           &lt;template&gt;

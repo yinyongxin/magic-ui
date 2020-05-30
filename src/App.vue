@@ -42,7 +42,7 @@ export default {
 #app {
   .main-show {
     margin-left: 240px;
-    min-width: 1000px;
+    min-width: 900px;
   }
   .shade {
     position: absolute;

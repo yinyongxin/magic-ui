@@ -2,7 +2,7 @@
   <button 
     class="aside-menu-item" 
     @click="handleClick"
-    :class="{'aside-menu-item-is-active': isActive}">
+    :class="{'aside-menu-item-is-active': isActive&&rootMenu.activeAnimation}">
     <slot></slot>
   </button>
 </template>

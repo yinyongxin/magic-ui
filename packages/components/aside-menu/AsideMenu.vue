@@ -59,6 +59,10 @@ export default {
     shadow: {
       type: String,
       default: 'nover'
+    },
+    activeAnimation: {
+      type: Boolean,
+      default: false
     }
   },
 

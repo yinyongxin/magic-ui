@@ -11,7 +11,7 @@
     <input 
       :class="[{
         'input-is-disabled': disabled,
-        'input-is-clearable': clearable,
+        'input-is-clearable': clearable||showPassword,
         'input-left-icon': $slots.prefix,
         'input-right-icon': $slots.suffix,
       }]"
@@ -134,10 +134,10 @@ export default {
     color: #606266;
     display: inline-block;
     font-size: inherit;
-    height: 40px;
-    line-height: 40px;
+    height: 34px;
+    line-height: 34px;
     outline: none;
-    padding: 0 15px;
+    padding: 0 10px;
     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
     width: 100%;
   }
@@ -148,44 +148,44 @@ export default {
     cursor: not-allowed;
   }
   .input-is-clearable {
-    padding: 0 40px 0 15px;
+    padding: 0 34px 0 15px;
   }
   .disabled-clearable-icon {
     cursor: pointer;
     position: absolute;
     font-size: 20px;
     color: #606266;
-    top: 8px;
+    top: 4px;
     right: 10px;
   }
   .input-left-icon {
-    padding: 0 15px 0 40px;
+    padding: 0 15px 0 34px;
   }
   .input-right-icon {
-    padding: 0 40px 0 15px;
+    padding: 0 34px 0 15px;
   }
   .left-icon {
     cursor: pointer;
     position: absolute;
     font-size: 20px;
     color: #606266;
-    top: 8px;
-    left: 10px;
+    top: 4px;
+    left: 8px;
   }
   .right-icon {
     cursor: pointer;
     position: absolute;
     font-size: 20px;
     color: #606266;
-    top: 8px;
-    right: 10px;
+    top: 4px;
+    right: 8px;
   }
   .min-max-number {
     cursor: pointer;
     position: absolute;
     font-size: 14px;
     color: #606266;
-    top: 10px;
+    top: 7px;
     right: 10px;
   }
   .slide-fade-enter-active {

@@ -3,9 +3,10 @@
     <m-aside-menu 
       :width="240"
       isBorder='right'
+      activeAnimation
     >
       <m-aside-menu-item index='1' m-link="/">
-        首页</m-aside-menu-item>
+        开发指南</m-aside-menu-item>
       <!-- 基本组件 -->
       <m-aside-menu-group>
         <template #title>基本的</template>
