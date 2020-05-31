@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import tableMinix from './table-minix'
+// import tableMinix from './table-minix'
 export default {
   name: 'MTableColumn',
-  mixins: [tableMinix],
+  // mixins: [tableMinix],
   inject: ['trTable','rootTable'],
   data() {
     return {

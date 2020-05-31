@@ -66,19 +66,10 @@
     </m-aside-menu>
   </div>
 </template>
-
 <script>
+import './menu.scss'
 export default {
   methods: {
   }
 }
 </script>
-
-<style lang="scss">
-.menu {
-  position:fixed ;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-</style>
