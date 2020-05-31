@@ -27,10 +27,6 @@ export default {
       type: String,
       default: '100%'
     },
-    padding: {
-      type: String,
-      default: '18'
-    },
     shadow: {
       type: String,
       default: 'hover'

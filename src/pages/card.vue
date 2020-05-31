@@ -11,7 +11,7 @@
     <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="150px">
       <pre>
         <code>
-          &lt;m-card&gt;
+          &lt;m-card :body-style="{}"&gt;
             基本的卡片
           &lt;/m-card&gt;
         </code>
