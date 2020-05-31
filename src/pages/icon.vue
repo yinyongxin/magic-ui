@@ -4,7 +4,7 @@
     <p class="m-b-40">提供了一套常用的图标集合。</p>
     <h2>使用方法</h2>
     <p>直接通过设置类名为 m-icon-iconName 来使用即可。例如：</p>
-    <m-card>
+    <m-card class="m-b-5">
       <div >
         <i style="vertical-align: middle;" class="fz-22 m-r-15 m-icon-edit"></i>
         <i style="vertical-align: middle;" class="fz-22 m-r-15 m-icon-share"></i>
@@ -12,6 +12,16 @@
         <m-button type="primary" icon="m-icon-search">搜索</m-button>
       </div>
     </m-card>
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="170px">
+      <pre>
+        <code>
+          &lt;i style="vertical-align: middle;" class="fz-22 m-r-15 m-icon-edit"&gt;&lt;/i&gt;
+          &lt;i style="vertical-align: middle;" class="fz-22 m-r-15 m-icon-share"&gt;&lt;/i&gt;
+          &lt;i style="vertical-align: middle;" class="fz-22 m-r-15 m-icon-delete"&gt;&lt;/i&gt;
+          &lt;m-button type="primary" icon="m-icon-search"&gt;搜索&lt;/m-button&gt;
+        </code>
+      </pre>
+    </m-show-box>
     <ul class="icon-list">
       <li><span><i class="m-icon-delete-solid"></i><span class="icon-name">m-icon-delete-solid</span></span></li>
       <li><span><i class="m-icon-delete"></i><span class="icon-name">m-icon-delete</span></span></li>

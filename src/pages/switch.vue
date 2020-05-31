@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style lang=scss>
-.switch-page {
+/* .switch-page {
 
-}
+} */
 </style>
