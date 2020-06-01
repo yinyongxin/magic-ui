@@ -40,6 +40,8 @@
         <template #title>表单</template>
         <m-aside-menu-item index='6' link-name="switch">
           Switch 开关</m-aside-menu-item>
+        <m-aside-menu-item index='6' link-name="radio">
+          Radio 单选框</m-aside-menu-item>
         <m-aside-menu-item index='6' link-name="input">
           Input 输入框</m-aside-menu-item>
       </m-aside-menu-group>

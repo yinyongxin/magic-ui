@@ -15,6 +15,8 @@ import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 // From 表单
 import Switch from './components/Switch.vue'
 import Input from './components/Input.vue'
+import RadioGroup from './components/RadioGroup.vue'
+import Radio from './components/Radio.vue'
 
 
 //Table 表格
@@ -37,6 +39,9 @@ let components = [
   // 表单
   Switch,
   Input,
+  Radio,
+  RadioGroup,
+
   Table,
   TableColumn
 ]
