@@ -48,7 +48,7 @@ export default {
     animation: button 0.3s ease-in;
   }
   &:hover{
-    box-shadow: 2px 2px 6px $content-color;
+    box-shadow: 1px 1px 6px $content-color;
   }
   &:active {
     background-color: #f3f3f3;

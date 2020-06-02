@@ -121,10 +121,11 @@ export default {
   .magic-input-inner {
     &:focus {
       border-color: $primary;
-      box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3)
+      box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
     }
     &:hover { 
       border-color: rgba($color: $primary, $alpha: 1);
+      box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
     }
     cursor: pointer;
     display: inline-block;

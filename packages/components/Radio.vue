@@ -103,7 +103,7 @@ export default {
     border-radius: 50%;
     overflow: hidden;
     color: $font-light;
-    transition: all 1s;
+    transition: all 0.5s;
     &:hover { 
       border-color: rgba($color: $primary, $alpha: 1);
       box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
