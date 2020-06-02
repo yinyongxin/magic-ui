@@ -86,9 +86,12 @@ export default {
     border-radius: 50%;
     overflow: hidden;
     transition: all 1s;
+    &:hover { 
+      border-color: rgba($color: $primary, $alpha: 1);
+    }
   }
   .magic-radio-active {
-    background: $primary;
+    background: $primary; 
     animation: magic-radio-button 0.5s;
   }
   .magic-radio-label {

@@ -17,6 +17,8 @@ import Switch from './components/Switch.vue'
 import Input from './components/Input.vue'
 import RadioGroup from './components/RadioGroup.vue'
 import Radio from './components/Radio.vue'
+import Checkbox from './components/Checkbox.vue'
+import CheckboxGroup from './components/CheckboxGroup.vue'
 
 
 //Table 表格
@@ -41,6 +43,8 @@ let components = [
   Input,
   Radio,
   RadioGroup,
+  Checkbox,
+  CheckboxGroup,
 
   Table,
   TableColumn

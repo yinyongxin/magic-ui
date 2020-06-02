@@ -14,6 +14,7 @@ export default [
   {path: '/icon', name: 'icon', component: lazyLoading('icon')},
   {path: '/switch', name: 'switch', component: lazyLoading('switch')},
   {path: '/radio', name: 'radio', component: lazyLoading('radio')},
+  {path: '/checkbox', name: 'checkbox', component: lazyLoading('checkbox')},
   {path: '/input', name: 'input', component: lazyLoading('input')},
   {path: '/card', name: 'card', component: lazyLoading('card')},
   {path: '/table', name: 'table', component: lazyLoading('table')},

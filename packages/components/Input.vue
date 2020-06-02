@@ -9,7 +9,7 @@
       <slot name="prefix">左</slot>
     </span>
     <input 
-      :class="[{
+      :class="['magic-input-inner',{
         'input-is-disabled': disabled,
         'input-is-clearable': clearable||showPassword,
         'input-left-icon': $slots.prefix,
@@ -19,7 +19,6 @@
       :maxlength="maxlength"
       :disabled="disabled"
       autocomplete="off"
-      class="magic-input-inner" 
       :type="typeName" 
       :value="value" 
       :placeholder="placeholder"
@@ -122,6 +121,10 @@ export default {
   .magic-input-inner {
     &:focus {
       border-color: $primary;
+      box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3)
+    }
+    &:hover { 
+      border-color: rgba($color: $primary, $alpha: 1);
     }
     cursor: pointer;
     display: inline-block;
@@ -129,7 +132,7 @@ export default {
     background-color: #fff;
     background-image: none;
     border-radius: 4px;
-    border: 1px solid #dcdfe6;
+    border: 1px solid  $border-color;
     box-sizing: border-box;
     color: #606266;
     display: inline-block;
@@ -138,12 +141,15 @@ export default {
     line-height: 34px;
     outline: none;
     padding: 0 10px;
-    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
     width: 100%;
   }
   .input-is-disabled {
+    &:hover { 
+      border-color: rgba($color: #e4e7ed, $alpha: 1);
+    }
     background-color: #f5f7fa;
-    border-color: #e4e7ed;
+    border-color: $border-color;
     color: #c0c4cc;
     cursor: not-allowed;
   }
