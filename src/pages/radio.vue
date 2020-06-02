@@ -25,6 +25,29 @@
       </pre>
     </m-show-box>
 
+    <h2 class="m-b-20">带有图标</h2>
+    <m-card class="m-b-5">
+      <m-radio v-model="value4" icon="m-icon-check" label="1">银永鑫</m-radio><br>
+      <m-radio v-model="value4" icon="m-icon-close" label="2"></m-radio>
+    </m-card>
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="300px">
+      <pre>
+        <code>
+          &lt;m-radio icon="m-icon-check" v-model="value" label="1"&gt;银永鑫&lt;/m-radio&gt;&lt;br&gt;
+          &lt;m-radio icon="m-icon-close" v-model="value" label="2"&gt;&lt;/m-radio&gt;
+
+          &lt;script&gt;
+          export default {
+            data() {
+              return {
+                value: '1',
+              }
+            },
+          }
+          &lt;/script&gt;
+        </code>
+      </pre>
+    </m-show-box>
 
     <h2 class="m-b-20">单选框组</h2>
     <m-card class="m-b-5">
@@ -86,7 +109,9 @@ export default {
     return {
       value1: '1',
       value2: '1',
-      value3: '1'
+      value3: '1',
+      value4: '1',
+      value5: '1',
     }
   },
 }

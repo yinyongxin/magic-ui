@@ -86,6 +86,11 @@ export default {
 
 <style lang="scss">
 .magic-checkbox {
+  user-select: none;
+  -ms-touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   cursor: pointer;
   position: relative;
   .magic-checkbox-input {
@@ -115,11 +120,13 @@ export default {
       border: 1px solid $border-color;
       box-shadow: none;
     }
+    box-shadow: none !important;
     background: $background-color !important;
     color: $font-dark !important;
   }
   .magic-checkbox-active {
     background: $primary; 
+    box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
     // animation: magic-checkbox-button 0.5s;
   }
   .magic-checkbox-icon {
@@ -164,7 +171,6 @@ export default {
     border-color: rgba($color: #e4e7ed, $alpha: 1);
   }
   color: $font-dark !important;
-
   border-color: $border-color;
   cursor: not-allowed;
 }

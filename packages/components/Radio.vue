@@ -14,6 +14,7 @@
     <span :class="['magic-radio-button', {
       'magic-radio-active': model==label
     }]">
+      <i v-show="model==label" :class="[icon, 'magic-checkbox-icon']"></i>
     </span>
     <span class="magic-radio-label">
       <slot>{{label}}</slot>
@@ -44,6 +45,10 @@ export default {
     border: {
       type: Boolean,
       default: false
+    },
+    icon: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -69,6 +74,11 @@ export default {
 
 <style lang="scss">
 .magic-radio {
+  user-select: none;
+  -ms-touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   cursor: pointer;
   position: relative;
   .magic-radio-input {
@@ -85,14 +95,26 @@ export default {
     border: 1px solid $border-color;
     border-radius: 50%;
     overflow: hidden;
+    color: $font-light;
     transition: all 1s;
     &:hover { 
       border-color: rgba($color: $primary, $alpha: 1);
+      box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
     }
   }
   .magic-radio-active {
     background: $primary; 
     animation: magic-radio-button 0.5s;
+    box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
+  }
+  .magic-checkbox-icon {
+    vertical-align: top;
+    width:  15px;
+    height: 16px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 600;
+    animation: magic-radio-icon 0.5s;
   }
   .magic-radio-label {
     position: relative;
@@ -100,6 +122,14 @@ export default {
     left: 0;
     padding-left: 10px;
   }
+  @keyframes magic-radio-icon {
+    0% {
+      transform: scale(0.2,0.2);
+    }
+    100% {
+      transform: scale(1,1);
+    }
+  } 
   @keyframes magic-radio-button {
     0% {
       transform: scale(1,1);

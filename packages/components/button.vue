@@ -52,6 +52,7 @@ export default {
   }
   &:active {
     background-color: #f3f3f3;
+    // animation: button 0.3s ease-in;
   }
   border: 1px solid $border-color;
   cursor: pointer;
