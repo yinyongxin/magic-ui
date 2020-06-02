@@ -52,24 +52,28 @@
 
 
     <h2>图标按钮</h2>
-    <p class="m-b-20">基础的图标按钮。</p>
+    <p class="m-b-20">插槽不填如内容，设置icon属性。或者插糟内写入一个图标。</p>
     <m-card class="m-b-5">
       <div>
-         <m-button class="m-r-10" @click="add"  icon="m-icon-minus"></m-button>
+        <m-button class="m-r-10" @click="add"  icon="m-icon-minus"></m-button>
         <m-button class="m-r-10" type="primary" icon="m-icon-plus" ></m-button>
         <m-button class="m-r-10" type="success" icon="m-icon-check" ></m-button>
-        <m-button class="m-r-10" type="warning" icon="m-icon-close" ></m-button>
-        <m-button class="m-r-10" type="error" icon="m-icon-warning" ></m-button>
+        <m-button class="m-r-10" type="warning"><i class="m-icon-close"></i></m-button>
+        <m-button class="m-r-10" type="error"><i class="m-icon-warning"></i></m-button>
       </div>
     </m-card>
-    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="180px">
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="240px">
       <pre>
         <code>
           &lt;m-button icon="m-icon-minus" &gt;&lt;/m-button&gt;
           &lt;m-button icon="m-icon-info" type="primary"&gt;&lt;/m-button&gt;
           &lt;m-button icon="m-icon-success" type="success"&gt;&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-warning" type="warning"&gt;&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-error" type="error"&gt;&lt;/m-button&gt;
+          &lt;m-button type="warning"&gt;
+            &lt;i class="m-icon-close"&gt;&lt;/i&gt;
+          &lt;/m-button&gt;
+          &lt;m-button type="error"&gt;
+            &lt;i class="m-icon-warning"&gt;&lt;/i&gt;
+          &lt;/m-button&gt;
         </code>
       </pre>
     </m-show-box>
@@ -98,7 +102,7 @@
     </m-show-box>
 
     <h2>禁用按钮</h2>
-    <p class="m-b-20">基础的禁用按钮。</p>
+    <p class="m-b-20">通过disabled属性使按钮处于禁用状态。</p>
     <m-card class="m-b-5">
       <div>
         <m-button disabled class="m-r-10">默认按钮</m-button>
@@ -110,11 +114,10 @@
     <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="180px">
       <pre>
         <code>
-          &lt;m-button icon="m-icon-minus" &gt;默认按钮&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-info" type="primary"&gt;主要按钮&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-success" type="success"&gt;成功按钮&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-warning" type="warning"&gt;警告按钮&lt;/m-button&gt;
-          &lt;m-button icon="m-icon-error" type="error"&gt;错误按钮&lt;/m-button&gt;
+          &lt;m-button disabled icon="m-icon-minus" &gt;默认按钮&lt;/m-button&gt;
+          &lt;m-button disabled icon="m-icon-info" type="primary"&gt;带图标按钮&lt;/m-button&gt;
+          &lt;m-button disabled icon="m-icon-success" type="success"&gt;成功按钮&lt;/m-button&gt;
+          &lt;m-button disabled circle icon="m-icon-warning" type="warning"&gt;&lt;/m-button&gt;
         </code>
       </pre>
     </m-show-box>
