@@ -9,7 +9,7 @@
     :disabled="disabled"
   >
     <i v-if="icon" :class="icon"></i>
-    <span v-if="$slots.default"><slot></slot></span>
+    <slot></slot>
   </button>
 </template>
 
