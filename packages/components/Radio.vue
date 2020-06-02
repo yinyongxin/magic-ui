@@ -2,19 +2,22 @@
   <label 
     :class="['magic-radio', {
       'magic-radio-border': border,
-      'magic-radio-border-active': border&&model==label
+      'magic-radio-border-active': border&&model==label,
+      'magic-radio-is-disabled': disabled
     }]"
     >
     <input 
       class="magic-radio-input" 
       type="radio" 
       v-model="model" 
+      :disabled="disabled"
       :name="name" 
       :value="label">
     <span :class="['magic-radio-button', {
-      'magic-radio-active': model==label
+      'magic-radio-active': model==label,
+      'magic-radio-button-is-disabled': disabled
     }]">
-      <i v-show="model==label" :class="[icon, 'magic-checkbox-icon']"></i>
+      <i v-show="model==label" :class="[icon, 'magic-radio-icon']"></i>
     </span>
     <span class="magic-radio-label">
       <slot>{{label}}</slot>
@@ -43,6 +46,10 @@ export default {
       default: ''
     },
     border: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
       type: Boolean,
       default: false
     },
@@ -102,12 +109,21 @@ export default {
       box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
     }
   }
+  .magic-radio-button-is-disabled {
+    &:hover { 
+      border: 1px solid $border-color;
+      box-shadow: none;
+    }
+    box-shadow: none !important;
+    background: $background-color !important;
+    color: $font-dark !important;
+  }
   .magic-radio-active {
     background: $primary; 
     animation: magic-radio-button 0.5s;
     box-shadow: 0 0 0 2px rgba($color: $primary, $alpha: 0.3);
   }
-  .magic-checkbox-icon {
+  .magic-radio-icon {
     vertical-align: top;
     width:  15px;
     height: 16px;
@@ -143,6 +159,9 @@ export default {
   } 
 }
 .magic-radio-border {
+  &:hover {
+    border: 1px solid $primary;
+  }
   display: inline-block;
   border: 1px solid $border-color;
   border-radius: 4px;
@@ -154,5 +173,14 @@ export default {
 .magic-radio-border-active {
   border: 1px solid $primary;
   background: rgba($color: $primary, $alpha: 0.2);
+}
+.magic-radio-is-disabled {
+  &:hover { 
+    border-color: rgba($color: #e4e7ed, $alpha: 1);
+  }
+  background: $background-color;
+  color: $font-dark !important;
+  border-color: $border-color;
+  cursor: not-allowed;
 }
 </style>

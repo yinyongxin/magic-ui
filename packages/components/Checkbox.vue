@@ -86,6 +86,7 @@ export default {
 
 <style lang="scss">
 .magic-checkbox {
+  color: $title-color;
   user-select: none;
   -ms-touch-action: manipulation;
   -webkit-user-select: none;
@@ -154,6 +155,10 @@ export default {
   } 
 }
 .magic-checkbox-border {
+  &:hover {
+    border: 1px solid $primary;
+    // background: rgba($color: $primary, $alpha: 0.2);
+  }
   display: inline-block;
   border: 1px solid $border-color;
   border-radius: 4px;
