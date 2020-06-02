@@ -3,9 +3,11 @@
     <h1>Checkbox 多选框</h1>
     <h2 class="m-b-20">基本用法</h2>
     <p>m-checkbox绑定值为Boolean类型没有插槽内容，默认显示label属性的值。</p>
+    <p>通过icon属性可以自定义图标</p>
     <m-card class="m-b-5">
       <m-checkbox v-model="checked1" label="1">银永鑫</m-checkbox><br>
-      <m-checkbox v-model="checked2" label="label"></m-checkbox>
+      <m-checkbox v-model="checked2" label="label"></m-checkbox><br>
+      <m-checkbox v-model="checked8" label="label" icon="m-icon-circle-check">定义图标</m-checkbox>
     </m-card>
     <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="300px">
       <pre>
@@ -30,8 +32,8 @@
     <h2 class="m-b-20">禁用状态</h2>
     <p>多选框不可用状态。通过disabled属性设置。</p>
     <m-card class="m-b-5">
-      <m-checkbox disabled v-model="checked1" label="1">银永鑫</m-checkbox><br>
-      <m-checkbox border disabled v-model="checked2" label="2">樊小迪</m-checkbox>
+      <m-checkbox disabled v-model="checked6" label="1">银永鑫</m-checkbox><br>
+      <m-checkbox border disabled v-model="checked7" label="2">樊小迪</m-checkbox>
     </m-card>
     <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="300px">
       <pre>
@@ -87,7 +89,7 @@
       <m-checkbox class="m-b-5" border v-model="checked4" label="1">银永鑫</m-checkbox><br>
       <m-checkbox border v-model="checked5" label="2"></m-checkbox>
     </m-card>
-    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="280px">
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="285px">
       <pre>
         <code>
           &lt;m-checkbox border v-model="value" label="1"&gt;银永鑫&lt;/m-checkbox&gt;&lt;br&gt;
@@ -117,6 +119,9 @@ export default {
       checked3: [],
       checked4: true,
       checked5: false,
+      checked6: true,
+      checked7: false,
+      checked8: true,
     }
   },
 }
