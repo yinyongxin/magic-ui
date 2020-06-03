@@ -77,6 +77,16 @@ export default {
     closeByShade: {
       type: Boolean,
       default: true
+    },
+    lockScroll: {
+      type: Boolean,
+      default: true
+    },
+  },
+  watch: {
+    visible(val) {
+      if(val&&this.lockScroll) document.body.style['overflow-y'] = 'hidden'
+      else document.body.style['overflow-y'] = 'auto'
     }
   },
   methods: {
