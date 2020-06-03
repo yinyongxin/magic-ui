@@ -8,7 +8,7 @@
       }]">
         <div 
           :class="['magic-dialog-box', {
-            'is-shadow-always': shadow,
+            'is-shadow-always': !shade&&shadow,
             'is-full-screen': fullScreen
           }]" 
           :style="[{
