@@ -105,6 +105,7 @@ export default {
     position: relative;
     .magic-dialog-header {
       position: relative;
+      font-weight: 600;
       font-size: 16px;
       padding: 10px 15px;
       .close-button {
