@@ -1,5 +1,5 @@
 <template>
-  <transition name="dialog">
+  <transition :name="shade?'dialog':''">
     <div 
       @click.self="closeByShade?closeDialog():null"
       v-show="visible"
@@ -142,7 +142,7 @@ export default {
   }
   @keyframes magic-dialog-box {
     0% {
-      transform: scale(0.4, 0.4);
+      transform: scale(0.6, 0.6);
     }
     100% {
       transform: scale(1, 1);
@@ -150,7 +150,7 @@ export default {
   }
 }
   .dialog-enter-active {
-    animation: fade .3s;
+    animation: fade .5s;
   }
   .dialog-leave-active {
     animation: fade .3s reverse;
@@ -158,11 +158,9 @@ export default {
   @keyframes fade {
     0% {
       opacity: 0;
-      transform: translateY(-20px);
     }
     100% {
       opacity: 1;
-      transform: translateY(0px);
     }
   }
 .magic-dialog-shade {
