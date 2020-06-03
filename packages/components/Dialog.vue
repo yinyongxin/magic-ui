@@ -1,5 +1,5 @@
 <template>
-  <transition :name="shade?'dialog':''">
+  <transition name="dialog">
     <div 
       @click.self="closeByShade?closeDialog():null"
       v-show="visible"
