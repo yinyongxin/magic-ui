@@ -55,6 +55,13 @@
           Table 表格</m-aside-menu-item>
       </m-aside-menu-group>
 
+      <!-- 消息组件 -->
+      <m-aside-menu-group>
+        <template #title>消息</template>
+        <m-aside-menu-item index='7' link-name="dialog">
+          Dialog 对话框</m-aside-menu-item>
+      </m-aside-menu-group>
+
       <m-aside-submenu icon="m-icon-s-tools">
         <template #title>
           正常菜单

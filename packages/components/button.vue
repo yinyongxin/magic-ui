@@ -32,7 +32,7 @@ export default {
     icon: {
       type: String,
       default: ''
-    }
+    },
   },
   methods: {
     handleClick(e) {
@@ -48,7 +48,7 @@ export default {
     animation: button 0.3s ease-in;
   }
   &:hover{
-    box-shadow: 1px 1px 6px $content-color;
+    box-shadow: 0px 0px 6px $border-color;
   }
   &:active {
     background-color: #f3f3f3;

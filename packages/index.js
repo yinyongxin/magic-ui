@@ -25,6 +25,9 @@ import CheckboxGroup from './components/CheckboxGroup.vue'
 import Table from './components/table/Table.vue'
 import TableColumn from './components/table/TableColumn.vue'
 
+// Massage 消息
+import Dialog from './components/Dialog.vue'
+
 
 
 let components = [
@@ -47,7 +50,9 @@ let components = [
   CheckboxGroup,
 
   Table,
-  TableColumn
+  TableColumn,
+
+  Dialog,
 ]
 
 const install = (Vue) => {
