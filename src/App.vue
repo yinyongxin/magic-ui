@@ -20,6 +20,7 @@
 
 <script>
 import Menu from './layout/Menu'
+import MButton from "../packages/components/Button";
 export default {
   name: 'App',
   data() {
@@ -27,14 +28,15 @@ export default {
       isShade: false
     }
   },
-  components: {  
+  components: {
+    MButton,
     Menu,
   },
   methods: {
     closeShade() {
       this.isShade = false
     }
-  }
+  },
 }
 </script>
 
