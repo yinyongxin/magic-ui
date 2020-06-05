@@ -34,7 +34,6 @@
         this.isShow = true
         this.showClose = showClose
         this.type = type
-        // this.close(time)
       },
       close(time = 3000, callback) {
         setTimeout(() => {
@@ -58,10 +57,13 @@
 .magic-message {
   margin-top: 15px;
   width: 100%;
+  text-align: center;
   .magic-message-container {
+    text-align: left;
     border-radius: 2px;
     margin: 0 auto;
-    width: 300px;
+    min-width: 200px;
+    display: inline-block;
     height: 40px;
     line-height: 40px;
     padding: 0 14px;

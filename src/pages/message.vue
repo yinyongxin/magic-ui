@@ -39,7 +39,7 @@
       message4() {
         // this.$message.show('这是消息弹框', 1000)
         this.$message({
-          message: '不自动关闭消息',
+          message: '不自动关闭消息长度很长很长',
           type: 'success',
           showClose: true,
           autoClose: false
