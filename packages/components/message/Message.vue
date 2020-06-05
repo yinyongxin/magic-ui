@@ -38,21 +38,26 @@
         // this.close(time)
       },
       close(time, callback) {
-        setTimeout(() => {
-          this.isShow = false
-          callback()
-        }, time)
+        // if(this.isShow) {
+          setTimeout(() => {
+            this.isShow = false
+            callback()
+          }, time)
+        // }
       }
-
     },
   }
 </script>
 
 <style lang="scss">
-.magic-message {
+.message-list-container {
   z-index: 999;
   position:fixed;
   top: 20px;
+  left: 0;
+  right: 0;
+}
+.magic-message {
   margin-top: 15px;
   width: 100%;
   .magic-message-container {
