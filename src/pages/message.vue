@@ -5,6 +5,7 @@
       <m-button @click="message1">打开对话框</m-button>
       <m-button @click="message2">打开对话框(带关闭按钮)</m-button>
       <m-button @click="message3">打开对话框</m-button>
+      <m-button @click="message4">不自动关闭</m-button>
     </m-card>
   </div>
 </template>
@@ -33,6 +34,15 @@
           message: '这是成功的消息',
           type: 'success',
           showClose: true,
+        })
+      },
+      message4() {
+        // this.$message.show('这是消息弹框', 1000)
+        this.$message({
+          message: '不自动关闭消息',
+          type: 'success',
+          showClose: true,
+          autoClose: false
         })
       }
     }

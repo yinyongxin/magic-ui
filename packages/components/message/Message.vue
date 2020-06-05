@@ -6,7 +6,7 @@
 
       }]">
           <i
-                  :class="[`m-icon-${type}`, 'magic-message-icon']"
+            :class="[`m-icon-${type}`, 'magic-message-icon']"
           ></i>
           <span class="magic-message-text">{{message}}</span>
           <span v-if="showClose" class="magic-message-close" @click="isShow = false">
@@ -29,21 +29,18 @@
       }
     },
     methods: {
-      show(message = '消息框',type = 'info', time = 3000, showClose = false, index = 1) {
-        console.log(message, type,  time, showClose)
+      show(message = '消息框', type = 'info', showClose = false, index = 1) {
         this.message = message
         this.isShow = true
         this.showClose = showClose
         this.type = type
         // this.close(time)
       },
-      close(time, callback) {
-        // if(this.isShow) {
-          setTimeout(() => {
-            this.isShow = false
-            callback()
-          }, time)
-        // }
+      close(time = 3000, callback) {
+        setTimeout(() => {
+          this.isShow = false
+          callback()
+        }, time)
       }
     },
   }
