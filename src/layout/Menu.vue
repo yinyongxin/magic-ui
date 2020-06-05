@@ -60,6 +60,8 @@
         <template #title>消息</template>
         <m-aside-menu-item index='7' link-name="dialog">
           Dialog 对话框</m-aside-menu-item>
+        <m-aside-menu-item index='7' link-name="message">
+          Message 消息框</m-aside-menu-item>
       </m-aside-menu-group>
 
       <m-aside-submenu icon="m-icon-s-tools">

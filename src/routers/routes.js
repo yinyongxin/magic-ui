@@ -19,4 +19,6 @@ export default [
   {path: '/card', name: 'card', component: lazyLoading('card')},
   {path: '/table', name: 'table', component: lazyLoading('table')},
   {path: '/dialog', name: 'dialog', component: lazyLoading('dialog')},
+  {path: '/message', name: 'message', component: lazyLoading('message')},
+
 ]

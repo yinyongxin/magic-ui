@@ -2,23 +2,23 @@ import './assets/fonts/font.scss'
 import './assets/reset.scss'
 import './assets/global.scss'
 
-import Button from './components/Button.vue'
-import Card from './components/Card.vue'
-import Row from './components/Row.vue'
-import Col from './components/Col.vue'
-import ShowBox from './components/ShowBox.vue'
+import Button from './components/button/Button.vue'
+import Card from './components/card/Card.vue'
+import Row from './components/row/Row.vue'
+import Col from './components/col/Col.vue'
+import ShowBox from './components/show-box/ShowBox.vue'
 import AsideMenu from './components/aside-menu/AsideMenu.vue'
 import AsideMenuGroup from './components/aside-menu/AsideMenuGroup.vue'
 import AsideMenuItem from './components/aside-menu/AsideMenuItem.vue'
 import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
 
 // From 表单
-import Switch from './components/Switch.vue'
-import Input from './components/Input.vue'
-import RadioGroup from './components/RadioGroup.vue'
-import Radio from './components/Radio.vue'
-import Checkbox from './components/Checkbox.vue'
-import CheckboxGroup from './components/CheckboxGroup.vue'
+import Switch from './components/switch/Switch.vue'
+import Input from './components/input/Input.vue'
+import RadioGroup from './components/radio-group/RadioGroup.vue'
+import Radio from './components/radio/Radio.vue'
+import Checkbox from './components/check-box/Checkbox.vue'
+import CheckboxGroup from './components/check-box-group/CheckboxGroup.vue'
 
 
 //Table 表格
@@ -26,7 +26,10 @@ import Table from './components/table/Table.vue'
 import TableColumn from './components/table/TableColumn.vue'
 
 // Massage 消息
-import Dialog from './components/Dialog.vue'
+import Dialog from './components/dialog/Dialog.vue'
+
+import MessageCreate from './components/message/index.js'
+
 
 
 
@@ -59,6 +62,7 @@ const install = (Vue) => {
   components.forEach(item => {
     Vue.component(item.name, item)
   })
+  MessageCreate(Vue)
 }
 
 

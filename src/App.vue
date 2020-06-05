@@ -20,7 +20,7 @@
 
 <script>
 import Menu from './layout/Menu'
-import MButton from "../packages/components/Button";
+import MButton from "../packages/components/button/Button";
 export default {
   name: 'App',
   data() {
