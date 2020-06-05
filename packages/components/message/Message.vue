@@ -56,6 +56,7 @@
   top: 20px;
   left: 0;
   right: 0;
+  pointer-events: none;
 }
 .magic-message {
   margin-top: 15px;
@@ -70,6 +71,7 @@
     border: 1px solid $border-color;
     background-color: #fff;
     position: relative;
+    pointer-events: auto;
     .magic-message-icon {
       /*font-size: 16px;*/
       padding-right: 10px;
