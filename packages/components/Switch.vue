@@ -13,11 +13,11 @@
     >
     <span v-if="inactiveText" class="inactiveText" :style="{color: value? inactiveColor: activeColor}">{{inactiveText}}</span>
     <span :style="{width: width+'px'}" :class="['magic-switch-core', {'magic-switch-is-disabled': disabled}]" ref="core">
-      <i v-if="inactiveIconClass" :class="inactiveIconClass" class="inactive"></i>
+      <i v-if="inactiveIconClass" :class="[inactiveIconClass, {'inactive-icon': (value && !disabled)}]"></i>
       <span
         class="magic-switch-button"
         :class="{isActive: value && !disabled}"></span>
-      <i v-if="activeIconClass" :class="activeIconClass" class="active"></i>
+      <i v-if="activeIconClass" :class="[activeIconClass, {'active-icon': !(value && !disabled)}]"  ></i>
     </span> 
     <span v-if="activeText" class="activeText" :style="{color: value? activeColor: inactiveColor}">{{activeText}}</span>
   </div>
@@ -123,11 +123,12 @@ export default {
       height: 18px;
       background-color: #fff;
     }
-    .inactive {
+    .inactive-icon {
+      color: #ffffff;
       float: left;
       font-size: 20px;
     }
-    .active {
+    .active-icon {
       float: right;
       font-size: 20px;
     }
@@ -135,7 +136,17 @@ export default {
       left: 100%;
       margin-left: -19px;
       animation: magic-switch 0.5s;
-      // border-radius: 100%;
+    }
+    .inactive-icon, .active-icon {
+      animation: switch-icon 0.5s;
+    }
+    @keyframes switch-icon {
+      0% {
+        transform: scale(0.1, 0.1);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
     }
   }
   .inactiveText {
