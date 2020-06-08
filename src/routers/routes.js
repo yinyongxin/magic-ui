@@ -1,5 +1,5 @@
 import use from '../pages/use.vue'
-import shade from '../pages/shade.vue'
+import home from '../pages/shade.vue'
 
 
 const lazyLoading = (name) => {
@@ -7,7 +7,7 @@ const lazyLoading = (name) => {
 }
 
 export default [
-  {path: '/', name: 'home', component: shade, meta: {title: 'MagicUI'}},
+  {path: '/', name: 'home', component: home, meta: {title: 'MagicUI'}},
   {path: '/use', name: 'use', component: use, meta: {title: '使用指导'}},
   {path: '/button', name: 'button', component: lazyLoading('button'), meta: {title: 'Button按钮'}},
   {path: '/layout', name: 'layout', component: lazyLoading('layout'), meta: {title: 'Layout布局'}},

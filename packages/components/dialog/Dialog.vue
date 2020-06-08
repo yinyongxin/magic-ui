@@ -99,6 +99,7 @@ export default {
 
 <style lang="scss">
 .magic-dialog {
+  z-index: 9999;
   overflow: auto;
   position: fixed;
   top: 0;
