@@ -6,6 +6,8 @@
       activeAnimation
     >
       <m-aside-menu-item index='1' m-link="/">
+        首页</m-aside-menu-item>
+      <m-aside-menu-item index='1' link-name="use">
         开发指南</m-aside-menu-item>
       <!-- 基本组件 -->
       <m-aside-menu-group>

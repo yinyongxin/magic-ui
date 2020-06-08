@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <shade></shade>
     <m-row>
       <Menu class="box-shadow-hover"></Menu>
       <m-col class="main-show">

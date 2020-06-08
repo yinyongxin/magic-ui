@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     closeShade() {
-      this.isShade = false
+      this.$router.push('/use')
     }
   },
 }
@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss">
   .magic-shade {
-    z-index: 999;
+    z-index: 1000;
     position: fixed;
     top: 0;
     left: 0;
