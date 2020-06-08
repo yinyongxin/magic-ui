@@ -5,9 +5,9 @@
       <Menu class="box-shadow-hover"></Menu>
       <m-col class="main-show">
         <div class="p-30">
-          <!-- <transition name="turn-page" mode="out-in"> -->
+          <transition name="turn-page">
             <router-view></router-view>
-          <!-- </transition> -->
+          </transition>
         </div>
       </m-col>
     </m-row>
@@ -49,10 +49,10 @@ export default {
     transition: all 0.5s;
   }
   .turn-page-enter {
-    transform: translateY(-100vh);
+    transform: translateX(-100vw);
   }
   .turn-page-leave-to {
-    transform: translateY(100vh);
+    transform: translateX(100vw);
   }
 }
 </style>
