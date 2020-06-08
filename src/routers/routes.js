@@ -1,5 +1,5 @@
 import use from '../pages/use.vue'
-import home from '../pages/shade.vue'
+import home from '../pages/home.vue'
 
 
 const lazyLoading = (name) => {

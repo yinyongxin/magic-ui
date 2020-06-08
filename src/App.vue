@@ -15,22 +15,16 @@
 
 <script>
 import Menu from './layout/Menu'
-import Shade from './pages/shade';
 export default {
   name: 'App',
   data() {
     return {
-      isShade: true
     }
   },
   components: {
-    Shade,
     Menu,
   },
   methods: {
-    closeShade() {
-      this.isShade = false
-    }
   },
 }
 </script>
