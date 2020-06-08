@@ -25,7 +25,7 @@ export default {
   name: 'App',
   data() {
     return {
-      isShade: false
+      isShade: true
     }
   },
   components: {
@@ -47,7 +47,10 @@ export default {
     min-width: 900px;
   }
   .shade {
-    position: absolute;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba($color: black, $alpha: 0.8);
