@@ -6,7 +6,7 @@ const lazyLoading = (name) => {
 }
 
 export default [
-  {path: '/', name: 'home', component: home},
+  {path: '/', name: 'home', component: home, meta: {title: 'MagicUI'}},
   {path: '/button', name: 'button', component: lazyLoading('button'), meta: {title: 'Button按钮'}},
   {path: '/layout', name: 'layout', component: lazyLoading('layout'), meta: {title: 'Layout布局'}},
   {path: '/asideMenu', name: 'asideMenu', component: lazyLoading('asideMenu'), meta: {title: 'AsideMenu侧边菜单'}},

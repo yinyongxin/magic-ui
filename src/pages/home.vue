@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <h1>这是开发指南</h1>
+    <h1>开发指南</h1>
     <h2>安装Magic-UI</h2>
     <h4>使用<b>npm</b>安装</h4>
     <p>npm install magic-ui-yyx</p>
@@ -30,7 +30,9 @@ new Vue({
 
 <script>
 export default {
-
+  created() {
+    console.log(this.$route)
+  },
 }
 </script>
 
