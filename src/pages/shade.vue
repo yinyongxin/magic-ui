@@ -1,31 +1,23 @@
 <template>
-    <transition name="fade">
-      <div v-if="isShade" class="magic-shade flex-center">
-        <div class="cantainer">
-          <h1 class="title">MAGICUI</h1>
-          <h2 class="des">一个基于Vue.js的灵活UI组件库</h2>
-          <div class="button">
-            <m-button class="m-r-15" type="success" @click="closeShade">开始使用</m-button>
-            <a href="https://github.com/yinyongxin/magic-ui" target="_blank" class="m-r-15">
-              <m-button>Github</m-button>
-            </a>
-            <a href="https://gitee.com/guduhuanzheyyx/magic-ui" target="_blank">
-              <m-button>码云</m-button>
-            </a>
-          </div>
-        </div>
-
+  <div class="magic-shade flex-center">
+    <div class="cantainer">
+      <h1 class="title">MAGICUI</h1>
+      <h2 class="des">一个基于Vue.js的灵活UI组件库</h2>
+      <div class="button">
+        <m-button class="m-r-15" type="success" @click="closeShade">开始使用</m-button>
+        <a href="https://github.com/yinyongxin/magic-ui" target="_blank" class="m-r-15">
+          <m-button>Github</m-button>
+        </a>
+        <a href="https://gitee.com/guduhuanzheyyx/magic-ui" target="_blank">
+          <m-button>码云</m-button>
+        </a>
       </div>
-    </transition>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      isShade: true
-    }
-  },
   methods: {
     closeShade() {
       this.$router.push('/use')
