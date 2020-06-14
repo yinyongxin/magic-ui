@@ -1,1 +1,13 @@
-@import './global/color.scss'
+@import './global/color.scss';
+.aside-menu {
+  color: $title-color;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.aside-menu-border-right {
+  border-right: 1px solid #DCDFE6;
+}
+.aside-menu-border-left {
+  border-left: 1px solid #DCDFE6;
+}
