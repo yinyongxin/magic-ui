@@ -9,3 +9,12 @@
 .is-shadow-never {
   box-shadow: none;
 }
+
+.message-list-container {
+  z-index: 999;
+  position:fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
