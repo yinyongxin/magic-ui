@@ -79,7 +79,6 @@ export default {
     }
   },
   mounted() {
-    
     // 获取菜单主体的高度
     if(this.mainSlot) this.height = window.getComputedStyle(this.$refs.reference).height
     if(this.open) {
