@@ -1,5 +1,4 @@
 <template>
-      <!-- flex: span, -->
   <div 
     class="magic-col" 
     :style="{
@@ -32,8 +31,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  .magic-col {
-  }
-</style>
