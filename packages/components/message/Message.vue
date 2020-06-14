@@ -102,12 +102,12 @@
     color: $error;
   }
 }
-  .magic-message-enter-active, .magic-message-leave-active {
-    transition: all .5s;
-    transform: translateY(0);
-  }
-  .magic-message-enter, .magic-message-leave-to /* .fade-leave-active below version 2.1.8 */ {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
+.magic-message-enter-active, .magic-message-leave-active {
+  transition: all .5s;
+  transform: translateY(0);
+}
+.magic-message-enter, .magic-message-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(-100%);
+}
 </style>

@@ -16,7 +16,6 @@ export default (Vue) => {
     tem.id ='message_' + seed++;
     tem.$mount()
 
-
     messages.push(tem)
     messages.forEach((item, index) => {
       messagelistDiv.appendChild(tem.$el)

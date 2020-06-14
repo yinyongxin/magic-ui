@@ -6,10 +6,12 @@ import Card from './components/card/Card.vue'
 import Row from './components/row/Row.vue'
 import Col from './components/col/Col.vue'
 import ShowBox from './components/show-box/ShowBox.vue'
+
+
 import AsideMenu from './components/aside-menu/AsideMenu.vue'
-import AsideMenuGroup from './components/aside-menu/AsideMenuGroup.vue'
-import AsideMenuItem from './components/aside-menu/AsideMenuItem.vue'
-import AsideSubMenu from './components/aside-menu/AsideSubMenu.vue'
+import AsideMenuGroup from './components/aside-menu-group/AsideMenuGroup.vue'
+import AsideMenuItem from './components/aside-menu-item/AsideMenuItem.vue'
+import AsideSubMenu from './components/aside-sub-menu/AsideSubMenu.vue'
 
 // From 表单
 import Switch from './components/switch/Switch.vue'
