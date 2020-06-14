@@ -1,34 +1,34 @@
 // $ui: #ff9900dc;
 // $ui: #2db7f5;
-$ui: #673ab7;
-$hover-color: #ececec;
+$ui: #673ab7 !default;
+$hover-color: #ececec !default;
 // 主要颜色
-$primary: #2db7f5;
-$primary-dark: #008cff;
+$primary: #2db7f5 !default;
+$primary-dark: #008cff !default;
 // 成功颜色
-$success: #19be6b;
-$success-dark: #00a050;
+$success: #19be6b !default;
+$success-dark: #00a050 !default;
 // 警告颜色 ↓
-$warning: #ff9900;
-$warning-dark: #ff7b00;
+$warning: #ff9900 !default;
+$warning-dark: #ff7b00 !default;
 // 错误颜色 ↓
-$error: #ed4014;
-$error-dark: #ff0000;
+$error: #ed4014 !default;
+$error-dark: #ff0000 !default;
 
 
-$main-color: #162138ea;
+$main-color: #162138ea !default;
 // 标题颜色 ↓
-$title-color: #17233d;
+$title-color: #17233d !default;
 // 内容颜色 ↓
-$content-color: #515a6e;
+$content-color: #515a6e !default;
 // 辅助/图标颜色 ↓
-$sub-color: #808695;
+$sub-color: #808695 !default;
 // 边框颜色 ↓
-$border-color: #dcdee2;
+$border-color: #dcdee2 !default;
 // 分割线颜色 ↓
-$divider-color: #e8eaec;
+$divider-color: #e8eaec !default;
 // 背景颜色 ↓
-$background-color: #f8f8f9;
+$background-color: #f8f8f9 !default;
 
-$font-light: #fff;
-$font-dark: #657180;
+$font-light: #fff !default;
+$font-dark: #657180 !default;
