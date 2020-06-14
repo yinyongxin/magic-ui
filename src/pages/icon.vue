@@ -358,7 +358,7 @@
         i {
           transition: color .15s linear;
           &:hover {
-            color: $ui;
+            color: rgb(224, 59, 224);
           }
           display: block;
           text-align: center;
@@ -369,7 +369,7 @@
         .icon-name {
           transition: color .15s linear;
           &:hover {
-            color: $ui;
+            color: rgb(224, 59, 224);
           }
           margin-top: 15px;
           display: block;

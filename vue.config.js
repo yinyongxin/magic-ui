@@ -16,11 +16,11 @@ module.exports = {
       })
   },
   // 引入全局SCSS变量
-  css: {
-    loaderOptions: {
-      sass: {
-        prependData: `@import "@/assets/color.scss";`
-      }
-    }
-  }
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       prependData: `@import "@/assets/color.scss";`
+  //     }
+  //   }
+  // }
 }
