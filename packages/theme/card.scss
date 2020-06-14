@@ -1,1 +1,18 @@
-@import './global/color.scss'
+@import './global/color.scss';
+
+.magic-card {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid $border-color;
+  background-color: #fff;
+  transition: all .4s;
+  .magic-card-header {
+    padding: 18px;
+  }
+  .magic-card-header-border {
+    border-bottom: 1px solid #DCDFE6;
+  }
+  .magic-card-main {
+    padding: 18px;
+  }
+}

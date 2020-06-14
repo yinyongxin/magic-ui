@@ -47,22 +47,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.magic-card {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid $border-color;
-  background-color: #fff;
-  transition: all .4s;
-  .magic-card-header {
-    padding: 18px;
-  }
-  .magic-card-header-border {
-    border-bottom: 1px solid #DCDFE6;
-  }
-  .magic-card-main {
-    padding: 18px;
-  }
-}
-</style>
