@@ -58,36 +58,5 @@ export default {
 </script>
 
 <style lang="scss">
-.magic-show-box {
-  border-radius: 2px;
-  border: 1px solid $border-color;
-  .magic-show-box-main { 
-    height: 0px;
-    overflow: hidden;
-    transition: all 1s;
-  }
-  .magic-show-box-content {
-    background-color: $background-color;
-    height: inherit;
-    overflow-y: auto;
-    padding: 14px;
-  }
-  .magic-show-box-on-off {
-    transition: all .5s;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    &:hover {
-      cursor: pointer;
-      color: $ui;
-      background-color: rgba($color: $ui, $alpha: 0.1);
-    }
-    border-top: 1px solid #eaeefb;
-    height: 44px;
-    text-align: center;
-    line-height: 44px;
-    width: 100%;
-  }
-}
+
 </style>
