@@ -1,6 +1,5 @@
-import './assets/fonts/font.scss'
-import './assets/reset.scss'
-import './assets/global.scss'
+import './theme/index.scss'
+import './theme/fonts/font.scss'
 
 import Button from './components/button/Button.vue'
 import Card from './components/card/Card.vue'
