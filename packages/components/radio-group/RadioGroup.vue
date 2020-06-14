@@ -17,9 +17,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.magic-radio {
-  
-}
-</style>
