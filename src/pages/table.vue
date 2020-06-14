@@ -66,15 +66,17 @@
       </pre>
     </m-show-box>
 
-    <h2>带边框的表格</h2>
-    <p class="m-b-20">具有边框。通过为m-table标签设置border属性</p>
+    <h2>对齐方式</h2>
+    <p class="m-b-20">通过为m-table标签设置align属性设置对其方式，默认值为left左对齐，可以设置为right、center</p>
     <m-card>
-      <m-table border :data="tableData">
+      <m-table align="right" :data="tableData">
         <m-table-column
+          width="20%"
           prop="date"
           label="日期">
         </m-table-column>
         <m-table-column
+          width="150px"
           prop="name"
           label="姓名">
         </m-table-column>
@@ -84,15 +86,17 @@
         </m-table-column>
       </m-table>
     </m-card>
-    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="640px">
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="670px">
       <pre>
         <code>
-          &lt;m-table border :data="tableData"&gt;
+          &lt;m-table align="right" :data="tableData"&gt;
             &lt;m-table-column
+              width="20%"
               prop="date"
               label="日期"&gt;
             &lt;/m-table-column&gt;
             &lt;m-table-column
+              width="150px"
               prop="name"
               label="姓名"&gt;
             &lt;/m-table-column&gt;
@@ -126,6 +130,69 @@
       </pre>
     </m-show-box>
 
+    <h2>带边框的表格</h2>
+    <p class="m-b-20">具有边框。通过为m-table标签设置border属性</p>
+    <m-card>
+      <m-table border :data="tableData">
+        <m-table-column
+          width="20%"
+          prop="date"
+          label="日期">
+        </m-table-column>
+        <m-table-column
+          width="150px"
+          prop="name"
+          label="姓名">
+        </m-table-column>
+        <m-table-column
+          prop="address"
+          label="地址">
+        </m-table-column>
+      </m-table>
+    </m-card>
+    <m-show-box close-title="显示代码" open-title="隐藏代码" class="m-b-40" height="670px">
+      <pre>
+        <code>
+          &lt;m-table border :data="tableData"&gt;
+            &lt;m-table-column
+              width="20%"
+              prop="date"
+              label="日期"&gt;
+            &lt;/m-table-column&gt;
+            &lt;m-table-column
+              width="150px"
+              prop="name"
+              label="姓名"&gt;
+            &lt;/m-table-column&gt;
+            &lt;m-table-column
+              prop="address"
+              label="地址"&gt;
+            &lt;/m-table-column&gt;
+          &lt;/m-table&gt;
+          &lt;script&gt;
+          export default {
+            data() {
+              return {
+                tableData: [{
+                  date: '2016-05-02',
+                  name: '银永鑫',
+                  address: '上海市普陀区金沙江路 1518 弄'
+                }, {
+                  date: '2016-05-04',
+                  name: '银永鑫2',
+                  address: '上海市普陀区金沙江路 1517 弄'
+                }, 
+                {
+                  date: '2016-05-03',
+                  name: '银永鑫3',
+                  address: '上海市普陀区金沙江路 1516 弄'
+                }]
+              }
+            },
+          &lt;/script&gt;
+        </code>
+      </pre>
+    </m-show-box>
 
     <h2>无表头</h2>
     <p class="m-b-20">如果没有表头可以通过设置表头不显示。通过为m-table标签设置:show-header="false"</p>

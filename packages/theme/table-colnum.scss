@@ -1,0 +1,14 @@
+@import './global/color.scss';
+.magic-table-column {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid $border-color;
+  .table-cell {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.magic-td-border-right {
+  border-right: 1px solid $border-color;
+}

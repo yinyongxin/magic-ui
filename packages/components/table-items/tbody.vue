@@ -16,9 +16,3 @@ export default {
   },
 } 
 </script>
-
-<style lang="scss">
-.magic-tbody {
-  width: 100%;
-}
-</style>

@@ -1,6 +1,8 @@
 <template>
   <td
-    :class="['magic-td']"
+    :class="['magic-td', {
+      'magic-td-border-right': rootTable.border
+    }]"
     >
       <slot></slot>
   </td>
@@ -23,9 +25,3 @@ export default {
   },
 }
 </script>
-
-<style lang='scss'>
-.magic-td {
-  padding: 12px 0;
-}
-</style>

@@ -24,7 +24,7 @@ import CheckboxGroup from './components/check-box-group/CheckboxGroup.vue'
 
 //Table 表格
 import Table from './components/table/Table.vue'
-import TableColumn from './components/table/TableColumn.vue'
+import TableColumn from './components/table-column/TableColumn.vue'
 
 // Massage 消息
 import Dialog from './components/dialog/Dialog.vue'

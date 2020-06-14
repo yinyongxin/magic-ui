@@ -1,0 +1,35 @@
+@import './global/color.scss';
+.magic-tbody {
+  width: 100%;
+}
+.magic-td {
+  padding: 12px 0;
+}
+.magic-tfoot {
+
+}
+.magic-th {
+  width: 100%;
+  &>div {
+    width: 100%;
+  }
+  overflow: hidden;
+  user-select: none;
+  background-color: #fff;
+  padding: 12px 0;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+}
+.magic-thead {
+  width: 100%;
+  font-weight: 600;
+}
+.magic-table-tr {
+  width: 100%;
+  // border-bottom: 1px solid $border-color;
+  background-color: #fff;
+  display: flex;
+}

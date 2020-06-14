@@ -18,10 +18,8 @@
 </template>
 
 <script>
-// import tableMinix from './table-minix'
 export default {
   name: 'MTableColumn',
-  // mixins: [tableMinix],
   inject: ['trTable','rootTable'],
   data() {
     return {
@@ -50,15 +48,3 @@ export default {
   },
 } 
 </script>
-
-<style lang="scss">
-.magic-table-column {
-  display: flex;
-  align-items: center;
-  padding: 12px 0;
-  .table-cell {
-    width: 100%;
-    padding: 0 10px;
-  }
-}
-</style>

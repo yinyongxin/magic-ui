@@ -9,9 +9,3 @@ export default {
   name: 'MTfoot',
 } 
 </script>
-
-<style lang="scss">
-.magic-tfoot {
-
-}
-</style>
